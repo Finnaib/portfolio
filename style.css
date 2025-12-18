@@ -17,6 +17,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Base Form Logic */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -642,6 +649,37 @@ header h2::after {
         line-height: 1;
         margin-bottom: -5px;
         display: block;
+    }
+
+    /* --- 5. Mobile Tab Refinements (About & Contact) --- */
+
+    /* Contact Form Stacking */
+    .form-row {
+        grid-template-columns: 1fr !important;
+        /* Stack vertically */
+        gap: 15px;
+    }
+
+    input,
+    textarea {
+        padding: 18px !important;
+        /* Larger touch target */
+        font-size: 1rem !important;
+    }
+
+    /* About Text Readability */
+    .tab-content#about p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 25px !important;
+        color: #e0e0e0;
+        /* Slightly brighter for readability */
+    }
+
+    /* Headers breathing room */
+    h2,
+    h3 {
+        margin-top: 10px;
     }
 
     /* Fix fonts */
