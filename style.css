@@ -448,55 +448,214 @@ header h2::after {
 
 @media (max-width: 768px) {
     body {
-        padding: 20px 0;
+        padding: 0;
+        background: var(--bg-main);
     }
 
+    .main-container {
+        padding: 0;
+        width: 100%;
+        gap: 0;
+        /* Remove gap */
+    }
+
+    /* --- 1. App-Style Sticky Header --- */
+    .sidebar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(30, 30, 31, 0.85);
+        /* Glass effect */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .sidebar h1 {
+        font-size: 1.1rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .sidebar-title {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    /* Flex Header Row */
+    .sidebar-header-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .profile-img-box {
+        width: 50px !important;
+        height: 50px !important;
+        margin: 0 !important;
+        border-radius: 12px !important;
+        flex-shrink: 0;
+    }
+
+    .header-info-col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    /* Language Selector specific for mobile header */
+    #lang-selector {
+        width: auto !important;
+        padding: 4px 8px !important;
+        font-size: 1.2rem !important;
+        /* Flag only? */
+        border: none !important;
+        background: transparent !important;
+    }
+
+    /* --- 2. Horizontal Contact Chips --- */
+    .contacts-list {
+        display: flex;
+        grid-template-columns: none;
+        /* Override previous grid */
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0;
+        gap: 10px;
+        border-top: none;
+        scrollbar-width: none;
+        /* Hide scrollbar Firefox */
+        -ms-overflow-style: none;
+        /* Hide scrollbar IE */
+    }
+
+    .contacts-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contact-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 8px 12px;
+        border-radius: 50px;
+        flex-shrink: 0;
+        gap: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .icon-box {
+        width: 24px;
+        height: 24px;
+        font-size: 0.9rem;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .contact-info h4 {
+        display: none;
+        /* Hide labels like EMAIL, PHONE */
+    }
+
+    .contact-info p,
+    .contact-info a {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+    }
+
+    /* Make Resume Button a Chip too */
+    .contacts-list .btn {
+        margin: 0 !important;
+        width: auto !important;
+        padding: 8px 16px !important;
+        font-size: 0.8rem;
+        border-radius: 50px;
+        white-space: nowrap;
+    }
+
+    /* --- 3. Body Content --- */
+    .content-card {
+        border-radius: 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        padding: 20px 20px 100px 20px;
+        /* Bottom padding for Navbar */
+        min-height: auto;
+    }
+
+    /* --- 4. Floating Glass Dock Navbar --- */
     .navbar {
         position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background: rgba(30, 30, 31, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 12px 0;
         top: auto;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0;
-        border-top: 1px solid var(--border-stale);
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        z-index: 2000;
-        background: rgba(30, 30, 31, 0.95);
-        backdrop-filter: blur(10px);
-        padding-bottom: calc(10px + env(safe-area-inset-bottom));
-        /* Safe area for iPhone X+ */
+        padding-bottom: 12px;
+        /* Override safe area for floating look */
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     }
 
     .navbar-list {
-        gap: 20px;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 0;
     }
 
-    .content-card {
-        padding: 20px;
-        padding-bottom: 100px;
+    .navbar-link {
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        opacity: 0.6;
     }
 
-    /* Skills: 1 Column on Mobile */
+    .navbar-link.active {
+        opacity: 1;
+        color: var(--accent);
+    }
+
+    .navbar-link::before {
+        content: '●';
+        /* Dot indicator or icon? text is better for now */
+        font-size: 1.2rem;
+        line-height: 1;
+        margin-bottom: -5px;
+        display: block;
+    }
+
+    /* Fix fonts */
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Skills Grid */
     .skills-list {
         grid-template-columns: 1fr;
     }
-
-    .project-card {
-        /* Ensure projects don't get too squashed */
-        min-width: 100%;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    header h2 {
-        font-size: 1.5rem;
-    }
 }
+
+
 
 /* RTL Support */
 [dir="rtl"] {
