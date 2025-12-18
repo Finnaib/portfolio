@@ -44,7 +44,7 @@ const translations = {
         "tech_php": "PHP & Xtream/IPTV APIs",
         "tech_cloud": "Cloud (Vercel/Docker)",
         "tech_python": "Python & Automation",
-        "tech_android": "Android Kernel & ROMs",
+        "tech_android": "Custom Android System Optimization",
         "tech_ui": "UI/UX Design (Figma)",
 
         // Timeline Summaries
@@ -112,7 +112,7 @@ const translations = {
         "proj_finninv_4": "Created a user-friendly dashboard for tracking invoice status and payment history, enhancing financial visibility for clients.",
 
         // Android
-        "proj_android_title": "Android Kernel Optimization",
+        "proj_android_title": "Custom Android System Optimization",
         "proj_android_1": "Enhanced Android kernel parameters using C++, Java, and Shell scripting, successfully boosting device battery life by 20% across supported devices.",
         "proj_android_2": "Analyzed system logs and performance metrics to identify bottlenecks and implement targeted improvements in process scheduling and memory management.",
         "proj_android_3": "Collaborated with the open-source community to test and validate patches, ensuring stability and compatibility across different device models.",
@@ -175,7 +175,7 @@ const translations = {
         "tech_php": "PHP & Xtream/IPTV APIs",
         "tech_cloud": "الحوسبة السحابية (Vercel/Docker)",
         "tech_python": "Python والأتمتة",
-        "tech_android": "نواة Android و ROMs",
+        "tech_android": "تحسين نظام Android المخصص",
         "tech_ui": "تصميم UI/UX (Figma)",
 
         // Contact & Sidebar
@@ -258,7 +258,7 @@ const translations = {
         "proj_finninv_3": "حسن التطبيق للأداء، مما يضمن أوقات تحميل سريعة وتشغيل سلس حتى مع مجموعات البيانات الكبيرة.",
         "proj_finninv_4": "أنشأ لوحة تحكم سهلة الاستخدام لتتبع حالة الفاتورة وسجل الدفع، مما يعزز الرؤية المالية للعملاء.",
 
-        "proj_android_title": "تحسين نواة Android",
+        "proj_android_title": "تحسين نظام Android المخصص",
         "proj_android_1": "عزز معلمات نواة Android باستخدام نصوص C++ و Java و Shell، مما أدى بنجاح إلى زيادة عمر بطارية الجهاز بنسبة 20٪ عبر الأجهزة المدعومة.",
         "proj_android_2": "حلل سجلات النظام ومقاييس الأداء لتحديد الاختناقات وتنفيذ تحسينات مستهدفة في جدولة العمليات وإدارة الذاكرة.",
         "proj_android_3": "تعاون مع مجتمع المصادر المفتوحة لاختبار والتحقق من صحة التصحيحات، مما يضمن الاستقرار والتوافق عبر نماذج الأجهزة المختلفة.",
@@ -320,7 +320,7 @@ const translations = {
         "tech_php": "PHP & Xtream/IPTV API",
         "tech_cloud": "云服务 (Vercel/Docker)",
         "tech_python": "Python & 自动化",
-        "tech_android": "Android 内核 & ROM",
+        "tech_android": "自定义 Android 系统优化",
         "tech_ui": "UI/UX 设计 (Figma)",
 
         // Contact & Sidebar
@@ -399,7 +399,7 @@ const translations = {
         "proj_finninv_3": "针对性能优化了应用程序，确保快速加载时间。",
         "proj_finninv_4": "创建了一个用户友好的仪表板，用于跟踪发票状态。",
 
-        "proj_android_title": "Android 内核优化",
+        "proj_android_title": "自定义 Android 系统优化",
         "proj_android_1": "使用 C++、Java 和 Shell 脚本增强了 Android 内核参数，电池寿命延长 20%。",
         "proj_android_2": "分析系统日志和性能指标以查明瓶颈。",
         "proj_android_3": "与开源社区合作测试和验证补丁。",
@@ -461,7 +461,7 @@ const translations = {
         "tech_php": "PHP & Xtream/IPTV API",
         "tech_cloud": "클라우드 (Vercel/Docker)",
         "tech_python": "Python & 자동화",
-        "tech_android": "Android 커널 & ROM",
+        "tech_android": "맞춤형 Android 시스템 최적화",
         "tech_ui": "UI/UX 디자인 (Figma)",
 
         // Contact & Sidebar
@@ -540,7 +540,7 @@ const translations = {
         "proj_finninv_3": "성능을 위해 애플리케이션을 개선하여 빠른 로드 시간을 보장했습니다.",
         "proj_finninv_4": "송장 상태 및 지불 내역을 추적하기 위한 사용자 친화적인 대시보드를 만들었습니다.",
 
-        "proj_android_title": "Android 커널 최적화",
+        "proj_android_title": "맞춤형 Android 시스템 최적화",
         "proj_android_1": "C++, Java 및 Shell 스크립팅을 사용하여 Android 커널 매개변수를 향상시켰습니다.",
         "proj_android_2": "시스템 로그 및 성능 지표를 분석하여 병목 현상을 식별했습니다.",
         "proj_android_3": "패치를 테스트하고 검증하기 위해 오픈 소스 커뮤니티와 협력했습니다.",
