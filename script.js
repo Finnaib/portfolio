@@ -29,34 +29,47 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Initial Tab State
+    // We can set this if needed, but HTML has 'active' classes already.
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    // Tab Switching Logic
-    const navLinks = document.querySelectorAll('.navbar-link');
-    const tabContents = document.querySelectorAll('.tab-content');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const targetTab = link.getAttribute('data-tab');
-
-            // Update Active Link
-            navLinks.forEach(l => l.classList.remove('active'));
+// Global Tab Switching Function
+window.changeTab = function (tabName) {
+    // 1. Update Buttons
+    // Both Desktop and Mobile links need to be updated
+    const allLinks = document.querySelectorAll('.navbar-link');
+    allLinks.forEach(link => {
+        // Check if onclick matches or data-tab matches
+        if (link.getAttribute('onclick')?.includes(tabName) || link.getAttribute('data-tab') === tabName) {
             link.classList.add('active');
-
-            // Update Active Tab Content
-            tabContents.forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.id === targetTab) {
-                    tab.classList.add('active');
-                }
-            });
-
-            // Scroll to top of content
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        } else {
+            link.classList.remove('active');
+        }
     });
+
+    // 2. Show Content
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.id === tabName) {
+            tab.classList.add('active');
+        }
+    });
+
+    // 3. Close Mobile Drawer (if open)
+    const sidebar = document.querySelector('.sidebar');
+    const menuBtn = document.getElementById('menu-toggle');
+    if (sidebar && sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+        if (menuBtn) menuBtn.classList.remove('open');
+    }
+
+    // 4. Scroll to top of content
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
 
     // Simple Form Submission Feedback (Stub)
     const contactForm = document.querySelector('#contact form');
