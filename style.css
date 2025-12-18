@@ -490,15 +490,17 @@ header h2::after {
         z-index: 1010;
         background: rgba(30, 30, 31, 0.95);
         backdrop-filter: blur(12px);
-        margin: 0 -20px 15px -20px;
-        /* Bleed to edges */
-        padding: 15px 20px;
+        margin: 0 -20px 5px -20px;
+        /* Reduced bottom margin */
+        padding: 15px 20px 10px 20px;
+        /* Check padding */
         width: calc(100% + 40px);
         border-bottom: 1px solid var(--border-stale);
         display: flex;
-        /* Ensure flex is explicit here too */
         align-items: center;
         gap: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        /* Enhanced shadow */
     }
 
 
