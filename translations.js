@@ -13,6 +13,21 @@ const translations = {
         "download_resume": "Download Resume",
         "about_me": "About Me",
 
+        // Dates
+        "date_present": "Present",
+        "date_jan": "January",
+        "date_feb": "February",
+        "date_mar": "March",
+        "date_apr": "April",
+        "date_may": "May",
+        "date_jun": "June",
+        "date_jul": "July",
+        "date_aug": "August",
+        "date_sep": "September",
+        "date_oct": "October",
+        "date_nov": "November",
+        "date_dec": "December",
+
         // Contact & Sidebar
         "lbl_email": "EMAIL",
         "lbl_phone": "PHONE",
