@@ -65,6 +65,9 @@ const translations = {
         "print_btn": "Print / Save as PDF",
         "back_btn": "Back to Portfolio",
 
+        // Resume Content - Summary
+        "res_summary_text": "Dedicated IT Help Desk professional with over 10 years of experience providing technical support for Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support. Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and minimizing downtime.",
+
         // About Me Content
         "about_text_1": "Dedicated IT Help Desk professional with over 10 years of experience providing technical support for both Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support.",
         "about_text_2": "Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and minimizing downtime.",
