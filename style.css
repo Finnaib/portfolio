@@ -627,14 +627,16 @@ header h2::after {
     }
 
     /* --- 3. Body Content --- */
+    /* Ensure content padding accounts for sticky header height */
     .content-card {
+        padding-top: 25px;
+        /* More breathing room */
+        min-height: auto;
+        padding-bottom: 100px;
         border-radius: 0;
         border: none;
         background: transparent;
         box-shadow: none;
-        padding: 20px 20px 100px 20px;
-        /* Bottom padding for Navbar */
-        min-height: auto;
     }
 
     /* --- 4. Floating Glass Dock Navbar --- */
