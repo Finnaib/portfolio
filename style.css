@@ -1,0 +1,510 @@
+:root {
+    /* vCard Theme Palette */
+    --bg-main: #121212;
+    --bg-card: #1e1e1f;
+    --bg-sidebar: #1e1e1f;
+    --border-stale: #38383b;
+    --accent: #ffdb70;
+    --text-primary: #fafafa;
+    --text-secondary: #d6d6d6;
+    --text-muted: #999;
+    --transition: 0.25s ease;
+
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.5;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 25px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 280px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-stale);
+    border-radius: 20px;
+    padding: 30px;
+    position: sticky;
+    top: 60px;
+    height: max-content;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.profile-img-box {
+    background: #2b2b2c;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-title {
+    background: #2b2b2c;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.contacts-list {
+    text-align: left;
+    border-top: 1px solid var(--border-stale);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-box {
+    background: linear-gradient(135deg, #2b2b2c 0%, rgba(43, 43, 44, 0) 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.contact-info h4 {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+}
+
+/* Main Content Styling */
+.content-card {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border-stale);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    box-shadow: var(--shadow);
+    min-height: 700px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+header h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2b2b2c;
+    border: 1px solid var(--border-stale);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px 30px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar-link {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+    color: var(--accent);
+}
+
+/* Page Sections */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Resume Styling (Timeline) */
+.timeline-section {
+    margin-top: 40px;
+}
+
+.timeline-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.timeline-list {
+    padding-left: 45px;
+    position: relative;
+}
+
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 1px;
+    height: 100%;
+    background: var(--border-stale);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 10px;
+    height: 100%;
+    background: var(--bg-card);
+    z-index: 1;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 5px;
+    left: -34px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #2b2b2c;
+    z-index: 2;
+}
+
+.timeline-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.timeline-date {
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.timeline-text {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Skills/Progress Bars */
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-list {
+    background: #2b2b2c;
+    border: 1px solid var(--border-stale);
+    border-radius: 14px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.skill-item h5 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bg {
+    background: #38383b;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: var(--accent);
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-out;
+}
+
+/* Portfolio Gallery */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    cursor: pointer;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.project-thumbnail {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-thumbnail img {
+    transform: scale(1.1);
+}
+
+.project-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background: #2b2b2c;
+    color: var(--accent);
+    padding: 10px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.project-title {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.project-category {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 0;
+    }
+
+    .navbar {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0;
+        border-top: 1px solid var(--border-stale);
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        z-index: 2000;
+        background: rgba(30, 30, 31, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-list {
+        gap: 20px;
+    }
+
+    .content-card {
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .sidebar,
+[dir="rtl"] .contacts-list,
+[dir="rtl"] .contact-info,
+[dir="rtl"] p,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+    text-align: right;
+}
+
+[dir="rtl"] .timeline-list {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+[dir="rtl"] .timeline-list::before {
+    left: auto;
+    right: 15px;
+}
+
+[dir="rtl"] .timeline-item::after {
+    left: auto;
+    right: -35px;
+}
+
+[dir="rtl"] .timeline-dot {
+    left: auto;
+    right: -34px;
+}
+
+[dir="rtl"] .navbar {
+    left: 0;
+    right: auto;
+    /* Wait, navbar is absolute top right. In RTL it should probably stay or move? 
+    Usually top-left in RTL if mirrored, but top-right is fine too. Let's force it to left if we mirror everything. */
+    right: auto;
+    left: 0;
+    border-radius: 20px 0 20px 0;
+    /* mirrored radius */
+    direction: rtl;
+}
+
+[dir="rtl"] .navbar-list {
+    flex-direction: row-reverse;
+    /* Icons/text order? No, list items order. */
+    padding: 0;
+}
+
+[dir="rtl"] .skill-item h5 {
+    direction: rtl;
+}
+
+[dir="rtl"] .skill-item h5 span:last-child {
+    /* percentages */
+    direction: ltr;
+    /* Keep numbers LTR? or let them flip. 95% is fine. */
+}
