@@ -461,199 +461,331 @@ header h2::after {
 
 @media (max-width: 768px) {
 
-    /* --- RESET & LAYOUT --- */
+    /* --- LAYOUT RESET --- */
     .main-container {
         flex-direction: column;
-        width: 100%;
-        height: auto;
         padding: 0;
-        overflow: visible;
-        /* Let body scroll naturally */
     }
 
     body {
-        overflow-y: auto;
-        /* Ensure scrolling works */
+        padding-top: 60px;
+        /* Space for fixed mobile header */
         background: var(--bg-main);
     }
 
-    /* --- 1. STATIC SCROLLING HEADER (Sidebar) --- */
-    aside.sidebar {
-        position: relative;
-        /* Scrolls with page */
+    /* --- MOBILE HEADER (Visible) --- */
+    .mobile-header {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
-        padding: 30px 20px 20px 20px;
-        background: var(--bg-sidebar);
-        border: none;
-        border-bottom: 1px solid var(--border-stale);
-        border-radius: 0;
-        z-index: 1;
-
-        display: flex;
-        flex-direction: column;
+        height: 60px;
+        background: rgba(30, 30, 31, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 2000;
         align-items: center;
-        /* Center everything */
-        text-align: center;
-        gap: 15px;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid var(--border-stale);
     }
 
-    /* Reset Header Row hacks */
-    .sidebar-header-row {
-        position: static;
+    .mobile-logo {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-main);
+    }
+
+    #menu-toggle {
         display: flex;
         flex-direction: column;
-        /* Stack image/name */
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    #menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: var(--accent);
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    #menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* --- SIDEBAR AS DRAWER --- */
+    aside.sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* Hidden by default */
+        width: 280px;
+        height: 100vh;
+        background: #18181b;
+        z-index: 2001;
+        /* Above header */
+        transition: left 0.3s ease-in-out;
+        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+        padding: 40px 20px;
+        overflow-y: auto;
+        border-right: 1px solid var(--border-stale);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Active State (Slide In) */
+    aside.sidebar.active {
+        left: 0;
+    }
+
+    /* Sidebar Internals for Drawer */
+    .profile-img-box img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .sidebar-header-row {
+        flex-direction: column;
+        text-align: center;
+        position: static;
         background: transparent;
         border: none;
         box-shadow: none;
-        backdrop-filter: none;
-        gap: 15px;
-    }
-
-    .profile-img-box img {
-        width: 80px;
-        /* Nice standard size */
-        height: 80px;
-        margin: 0 auto;
-        border-radius: 20px;
-        /* Softer rect */
-    }
-
-    .header-info-col {
-        align-items: center;
-        width: 100%;
-    }
-
-    .sidebar h1 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-    }
-
-    .sidebar-title {
-        font-size: 0.95rem;
-        color: var(--text-secondary);
-        background: rgba(255, 255, 255, 0.05);
-        padding: 6px 16px;
-        border-radius: 20px;
-        display: inline-block;
+        padding: 0;
     }
 
     #lang-selector {
-        position: absolute;
-        /* Top right corner */
-        top: 20px;
-        right: 20px;
-        width: auto;
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-    /* --- CONTACTS (Static Top List) --- */
-    .contacts-list {
-        display: none;
-        /* Simplify: Hide top contacts */
-    }
-
-    /* --- 2. BOTTOM NAVIGATION BAR --- */
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
         width: 100%;
-        height: auto;
-        background: #18181b;
-        /* Solid Dark */
-        border: none;
+        margin-top: 10px;
+        position: static;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* --- NAVIGATION LINKS (Inside Drawer) --- */
+    .navbar {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
         border-top: 1px solid var(--border-stale);
-        border-radius: 0;
-        padding: 10px 0 25px 0;
-        /* Extra bottom padding for safe area */
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        transform: none;
-        max-width: 100%;
-        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
     }
 
     .navbar-list {
-        width: 100%;
-        justify-content: space-around;
-        /* Even spacing */
-        gap: 0;
-    }
-
-    .navbar-link {
-        font-size: 0.7rem;
-        /* Label size */
-        opacity: 0.6;
-        gap: 6px;
-    }
-
-    .navbar-link.active {
-        opacity: 1;
-        color: var(--accent);
-    }
-
-    .navbar-link::before {
-        display: block;
-        margin-bottom: 2px;
-        font-size: 1.2rem;
-    }
-
-
-    /* --- 3. MAIN CONTENT --- */
-    .main-content {
-        width: 100%;
-        padding: 0;
-    }
-
-    .content-card {
-        padding: 20px 20px 120px 20px;
-        /* Big bottom padding for navbar */
-        border: none;
-        background: transparent;
-        box-shadow: none;
-        width: 100%;
-    }
-
-    /* Make Forms Nice */
-    .form-row {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        /* Vertical List */
         gap: 15px;
     }
 
-    input,
-    textarea {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid var(--border-stale);
-    }
-
-    /* Skills Grid */
-    .skills-list {
-        grid-template-columns: 1fr;
-        /* Stack skills */
-        gap: 10px;
-    }
-
-    /* Typography */
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    h3 {
+    .navbar-link {
         font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.2s;
+        text-align: left;
     }
 
-    p {
-        font-size: 1rem;
-        line-height: 1.6;
+    .navbar-link.active {
+        color: var(--accent);
+        background: rgba(255, 219, 112, 0.1);
     }
+
+    .navbar-link::before {
+        display: none;
+    }
+
+    /* No dots */
+
+    /* --- MAIN CONTENT --- */
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-card {
+        padding: 10px 0;
+    }
+
+    /* Clean up form rows on mobile */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Reset Header Row hacks */
+.sidebar-header-row {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    /* Stack image/name */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    gap: 15px;
+}
+
+.profile-img-box img {
+    width: 80px;
+    /* Nice standard size */
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* Softer rect */
+}
+
+.header-info-col {
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-title {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#lang-selector {
+    position: absolute;
+    /* Top right corner */
+    top: 20px;
+    right: 20px;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* --- CONTACTS (Static Top List) --- */
+.contacts-list {
+    display: none;
+    /* Simplify: Hide top contacts */
+}
+
+/* --- 2. BOTTOM NAVIGATION BAR --- */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #18181b;
+    /* Solid Dark */
+    border: none;
+    border-top: 1px solid var(--border-stale);
+    border-radius: 0;
+    padding: 10px 0 25px 0;
+    /* Extra bottom padding for safe area */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    transform: none;
+    max-width: 100%;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-list {
+    width: 100%;
+    justify-content: space-around;
+    /* Even spacing */
+    gap: 0;
+}
+
+.navbar-link {
+    font-size: 0.7rem;
+    /* Label size */
+    opacity: 0.6;
+    gap: 6px;
+}
+
+.navbar-link.active {
+    opacity: 1;
+    color: var(--accent);
+}
+
+.navbar-link::before {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+
+/* --- 3. MAIN CONTENT --- */
+.main-content {
+    width: 100%;
+    padding: 0;
+}
+
+.content-card {
+    padding: 20px 20px 120px 20px;
+    /* Big bottom padding for navbar */
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+}
+
+/* Make Forms Nice */
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-stale);
+}
+
+/* Skills Grid */
+.skills-list {
+    grid-template-columns: 1fr;
+    /* Stack skills */
+    gap: 10px;
+}
+
+/* Typography */
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
 }
 
 

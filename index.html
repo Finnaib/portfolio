@@ -45,310 +45,347 @@
                         <a href="mailto:shoaibwwe01@gmail.com">shoaibwwe01@gmail.com</a>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="icon-box">📱</div>
-                    <div class="contact-info">
-                        <h4 data-i18n="lbl_phone">Phone</h4>
-                        <p>+91-9369890468</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon-box">📍</div>
-                    <div class="contact-info">
-                        <h4 data-i18n="lbl_loc">Location</h4>
-                        <p data-i18n="location">Cairo, Egypt</p>
-                    </div>
-                </div>
-                <!-- Action to Resume.html -->
-                <a href="resume.html" class="btn btn-primary" style="margin-top: 20px; width: 100%;"
-                    data-i18n="download_resume">Download Resume</a>
+                <!-- More contacts... -->
             </div>
-        </aside>
 
-        <!-- MAIN CONTENT -->
-        <div class="content-card">
-
+            <!-- NAVIGATION LINKS (Restored in Drawer) -->
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-link active" data-tab="about" data-i18n="nav_about">About</li>
-                    <li class="navbar-link" data-tab="resume" data-i18n="nav_resume">Resume</li>
-                    <li class="navbar-link" data-tab="portfolio" data-i18n="nav_portfolio">Portfolio</li>
-                    <li class="navbar-link" data-tab="contact" data-i18n="nav_contact">Contact</li>
+                    <li class="navbar-link active" onclick="changeTab('about')" data-i18n="nav_about">About</li>
+                    <li class="navbar-link" onclick="changeTab('resume')" data-i18n="nav_resume">Resume</li>
+                    <li class="navbar-link" onclick="changeTab('portfolio')" data-i18n="nav_portfolio">Portfolio</li>
+                    <li class="navbar-link" onclick="changeTab('contact')" data-i18n="nav_contact">Contact</li>
                 </ul>
             </nav>
+        </aside>
 
-            <!-- ABOUT SECTION -->
-            <section class="tab-content active" id="about">
-                <header>
-                    <h2 data-i18n="about_me">About Me</h2>
-                </header>
-                <div style="margin-bottom: 40px;">
-                    <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="about_text_1">
-                        Dedicated IT Help Desk professional with over 10 years of experience providing technical support
-                        for both Windows, Linux and macOS environments. Proven expertise in hardware and software
-                        troubleshooting, network security management, system administration, and end-user support.
-                    </p>
-                    <p style="color: var(--text-secondary);" data-i18n="about_text_2">
-                        Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system
-                        reliability and security. Adept at working in fast-paced environments with a strong commitment
-                        to improving operational efficiency and minimizing downtime.
-                    </p>
-                </div>
-
-                <header>
-                    <h3>Specialized Tech</h3>
-                </header>
-                <div class="skills-list"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px;">
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>React.js & Tailwind (v18)</span> <span>95%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 95%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>PHP & Xtream/IPTV APIs</span> <span>92%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 92%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>Cloud (Vercel/Docker/Firebase)</span> <span>90%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 90%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>Python & Automation Scripts</span> <span>88%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 88%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>Android Kernel & Custom ROMs</span> <span>94%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 94%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>UI/UX Design (Figma/Canva)</span> <span>85%</span>
-                        </h5>
-                        <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
-                            <div class="progress-fill"
-                                style="width: 85%; height: 100%; background: var(--accent); border-radius: 10px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- RESUME SECTION -->
-            <section class="tab-content" id="resume">
-                <header>
-                    <h2 data-i18n="nav_resume">Resume</h2>
-                </header>
-
-                <div class="timeline-section">
-                    <div class="timeline-title">
-                        <div class="icon-box">📅</div>
-                        <h3 data-i18n="res_exp_title">Experience</h3>
-                    </div>
-                    <div class="timeline-list">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4><span data-i18n="role_it_officer">IT Officer</span> <span
-                                    style="font-size: 0.9em; font-weight: normal; opacity: 0.8;"
-                                    data-i18n="role_part_time">(Part-time)</span>
-                            </h4>
-                            <span class="timeline-date"><span data-i18n="date_nov">November</span> 2025 — <span
-                                    data-i18n="date_present">Present</span></span>
-                            <p class="timeline-text" data-i18n="timeline_gw">Grand Wolf, Cairo, Egypt. Directing
-                                technical operations and
-                                security infrastructure for a premier security firm.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4 data-i18n="role_tech_support">IT Tech Support Manager</h4>
-                            <span class="timeline-date">2019 — 2024</span>
-                            <p class="timeline-text" data-i18n="timeline_agi">AGI Institute, Lucknow, India. Managed IT
-                                support for institutional
-                                programs, Active Directory, Office 365, and VPN configurations.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4 data-i18n="role_hw_tech">Hardware Technician</h4>
-                            <span class="timeline-date">2016 — 2018</span>
-                            <p class="timeline-text" data-i18n="timeline_agi_hw">AGI Institute, Lucknow, India. Provided
-                                essential hardware support
-                                and equipment lifecycle maintenance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-section">
-                    <div class="timeline-title">
-                        <div class="icon-box">🎓</div>
-                        <h3 data-i18n="res_edu_title">Education</h3>
-                    </div>
-                    <div class="timeline-list">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4 data-i18n="edu_arabic">Basic Arabic Language</h4>
-                            <span class="timeline-date"><span data-i18n="date_sep">September</span> 2024 — <span
-                                    data-i18n="date_present">Present</span></span>
-                            <p class="timeline-text" data-i18n="timeline_tatweer">Markaz Tatweer (Al Azhar), Cairo,
-                                Egypt.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4><span data-i18n="edu_bca">Bachelor of Computer Application (BCA)</span> <span
-                                    style="font-size: 0.9em; font-weight: normal; opacity: 0.8;"
-                                    data-i18n="edu_dropped">(Dropped Out)</span>
-                            </h4>
-                            <span class="timeline-date"><span data-i18n="date_apr">April</span> 2022 — <span
-                                    data-i18n="date_jun">June</span> 2024</span>
-                            <p class="timeline-text" data-i18n="timeline_ignou">IGNOU, Lucknow, India.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4 data-i18n="edu_inter">Intermediate Degree</h4>
-                            <span class="timeline-date"><span data-i18n="date_apr">April</span> 2020 — <span
-                                    data-i18n="date_mar">March</span> 2022</span>
-                            <p class="timeline-text" data-i18n="timeline_msc">Modern Standard Intermediate College,
-                                Lucknow, India.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4 data-i18n="edu_hs">High School Diploma</h4>
-                            <span class="timeline-date"><span data-i18n="date_apr">April</span> 2018 — <span
-                                    data-i18n="date_mar">March</span> 2020</span>
-                            <p class="timeline-text" data-i18n="timeline_lcc">Lucknow Christian College, Lucknow, India.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PORTFOLIO SECTION -->
-            <section class="tab-content" id="portfolio">
-                <header>
-                    <h2 data-i18n="nav_portfolio">Portfolio</h2>
-                </header>
-                <div class="portfolio-grid">
-                    <a href="https://finntv.vercel.app/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="project-card">
-                            <div class="project-thumbnail">
-                                <img src="images/finntv_premium_ui_1766069898922.png" alt="FinnTV">
-                                <div class="project-icon">🔗</div>
-                            </div>
-                            <h4 class="project-title" data-i18n="proj_finntv_title">FinnTV (IPTV Infrastructure)</h4>
-                            <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">PHP, Python,
-                                Docker, Nginx</p>
-                            <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
-                                    data-i18n="date_oct">October</span> 2025 — <span
-                                    data-i18n="date_present">Present</span></p>
-                        </div>
-                    </a>
-                    <div class="project-card">
-                        <div class="project-thumbnail">
-                            <img src="images/android_rom_premium_visual_1766075789498.png" alt="Android">
-                            <div class="project-icon">👁️</div>
-                        </div>
-                        <h4 class="project-title" data-i18n="proj_android_title">Android Custom ROMs</h4>
-                        <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">Kernel Tuning, C++,
-                            Java</p>
-                        <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
-                                data-i18n="date_dec">December</span> 2022 — <span data-i18n="date_jun">June</span> 2024
-                        </p>
-                    </div>
-                    <a href="https://finnerp.vercel.app/" target="_blank"
-                        style="text-decoration: none; color: inherit;">
-                        <div class="project-card">
-                            <div class="project-thumbnail">
-                                <img src="images/finn_erp_dashboard_1766073407673.png" alt="FinnERP">
-                                <div class="project-icon">🔗</div>
-                            </div>
-                            <h4 class="project-title" data-i18n="proj_finnerp_title">FinnERP System</h4>
-                            <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">React, Firebase,
-                                Tailwind CSS</p>
-                            <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
-                                    data-i18n="date_oct">October</span> 2025 — <span
-                                    data-i18n="date_present">Present</span></p>
-                        </div>
-                    </a>
-                    <a href="https://finninvoice.my-style.in/?i=1" target="_blank"
-                        style="text-decoration: none; color: inherit;">
-                        <div class="project-card">
-                            <div class="project-thumbnail">
-                                <img src="images/finn_invoice_system_1766073433159.png" alt="Finn Invoice">
-                                <div class="project-icon">🔗</div>
-                            </div>
-                            <h4 class="project-title" data-i18n="proj_finninv_title">Finn Invoice Ecosystem</h4>
-                            <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">HTML, CSS,
-                                JavaScript</p>
-                            <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
-                                    data-i18n="date_oct">October</span> 2025 — <span
-                                    data-i18n="date_present">Present</span></p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-
-
-            <!-- CONTACT SECTION -->
-            <section class="tab-content" id="contact">
-                <header>
-                    <h2 data-i18n="nav_contact">Contact</h2>
-                </header>
-                <div style="margin-top: 30px;">
-                    <p style="color: var(--text-secondary); margin-bottom: 30px;" data-i18n="contact_text">
-                        Interested in collaboration or have a technical project? Feel free to reach out via the contacts
-                        in the sidebar or send me a message.
-                    </p>
-                    <form style="display: grid; gap: 20px;">
-                        <div class="form-row">
-                            <input type="text" placeholder="Full Name" data-i18n="form_name"
-                                style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;">
-                            <input type="email" placeholder="Email Address" data-i18n="form_email"
-                                style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;">
-                        </div>
-                        <textarea placeholder="Your Message" rows="5" data-i18n="form_msg"
-                            style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;"></textarea>
-                        <button type="button" class="btn btn-primary" data-i18n="form_btn"
-                            style="justify-self: end; padding: 15px 40px; border-radius: 12px; cursor: pointer;">Send
-                            Message</button>
-                    </form>
-                </div>
-            </section>
-
+        <!-- MOBILE HEADER (Hamburger) -->
+        <div class="mobile-header">
+            <div class="mobile-logo">Mohd Shoaib</div>
+            <button id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
 
-    </main>
+        <main class="main-content">
+            <div class="contact-item">
+                <div class="icon-box">📱</div>
+                <div class="contact-info">
+                    <h4 data-i18n="lbl_phone">Phone</h4>
+                    <p>+91-9369890468</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon-box">📍</div>
+                <div class="contact-info">
+                    <h4 data-i18n="lbl_loc">Location</h4>
+                    <p data-i18n="location">Cairo, Egypt</p>
+                </div>
+            </div>
+            <!-- Action to Resume.html -->
+            <a href="resume.html" class="btn btn-primary" style="margin-top: 20px; width: 100%;"
+                data-i18n="download_resume">Download Resume</a>
+            </div>
+            </aside>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+            <!-- MAIN CONTENT -->
+            <div class="content-card">
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-link active" data-tab="about" data-i18n="nav_about">About</li>
+                        <li class="navbar-link" data-tab="resume" data-i18n="nav_resume">Resume</li>
+                        <li class="navbar-link" data-tab="portfolio" data-i18n="nav_portfolio">Portfolio</li>
+                        <li class="navbar-link" data-tab="contact" data-i18n="nav_contact">Contact</li>
+                    </ul>
+                </nav>
+
+                <!-- ABOUT SECTION -->
+                <section class="tab-content active" id="about">
+                    <header>
+                        <h2 data-i18n="about_me">About Me</h2>
+                    </header>
+                    <div style="margin-bottom: 40px;">
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="about_text_1">
+                            Dedicated IT Help Desk professional with over 10 years of experience providing technical
+                            support
+                            for both Windows, Linux and macOS environments. Proven expertise in hardware and software
+                            troubleshooting, network security management, system administration, and end-user support.
+                        </p>
+                        <p style="color: var(--text-secondary);" data-i18n="about_text_2">
+                            Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring
+                            system
+                            reliability and security. Adept at working in fast-paced environments with a strong
+                            commitment
+                            to improving operational efficiency and minimizing downtime.
+                        </p>
+                    </div>
+
+                    <header>
+                        <h3>Specialized Tech</h3>
+                    </header>
+                    <div class="skills-list"
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px;">
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>React.js & Tailwind (v18)</span> <span>95%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 95%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>PHP & Xtream/IPTV APIs</span> <span>92%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 92%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>Cloud (Vercel/Docker/Firebase)</span> <span>90%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 90%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>Python & Automation Scripts</span> <span>88%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 88%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>Android Kernel & Custom ROMs</span> <span>94%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 94%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span>UI/UX Design (Figma/Canva)</span> <span>85%</span>
+                            </h5>
+                            <div class="progress-bg" style="height: 6px; background: #2b2b2c; border-radius: 10px;">
+                                <div class="progress-fill"
+                                    style="width: 85%; height: 100%; background: var(--accent); border-radius: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- RESUME SECTION -->
+                <section class="tab-content" id="resume">
+                    <header>
+                        <h2 data-i18n="nav_resume">Resume</h2>
+                    </header>
+
+                    <div class="timeline-section">
+                        <div class="timeline-title">
+                            <div class="icon-box">📅</div>
+                            <h3 data-i18n="res_exp_title">Experience</h3>
+                        </div>
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4><span data-i18n="role_it_officer">IT Officer</span> <span
+                                        style="font-size: 0.9em; font-weight: normal; opacity: 0.8;"
+                                        data-i18n="role_part_time">(Part-time)</span>
+                                </h4>
+                                <span class="timeline-date"><span data-i18n="date_nov">November</span> 2025 — <span
+                                        data-i18n="date_present">Present</span></span>
+                                <p class="timeline-text" data-i18n="timeline_gw">Grand Wolf, Cairo, Egypt. Directing
+                                    technical operations and
+                                    security infrastructure for a premier security firm.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 data-i18n="role_tech_support">IT Tech Support Manager</h4>
+                                <span class="timeline-date">2019 — 2024</span>
+                                <p class="timeline-text" data-i18n="timeline_agi">AGI Institute, Lucknow, India. Managed
+                                    IT
+                                    support for institutional
+                                    programs, Active Directory, Office 365, and VPN configurations.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 data-i18n="role_hw_tech">Hardware Technician</h4>
+                                <span class="timeline-date">2016 — 2018</span>
+                                <p class="timeline-text" data-i18n="timeline_agi_hw">AGI Institute, Lucknow, India.
+                                    Provided
+                                    essential hardware support
+                                    and equipment lifecycle maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-title">
+                            <div class="icon-box">🎓</div>
+                            <h3 data-i18n="res_edu_title">Education</h3>
+                        </div>
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 data-i18n="edu_arabic">Basic Arabic Language</h4>
+                                <span class="timeline-date"><span data-i18n="date_sep">September</span> 2024 — <span
+                                        data-i18n="date_present">Present</span></span>
+                                <p class="timeline-text" data-i18n="timeline_tatweer">Markaz Tatweer (Al Azhar), Cairo,
+                                    Egypt.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4><span data-i18n="edu_bca">Bachelor of Computer Application (BCA)</span> <span
+                                        style="font-size: 0.9em; font-weight: normal; opacity: 0.8;"
+                                        data-i18n="edu_dropped">(Dropped Out)</span>
+                                </h4>
+                                <span class="timeline-date"><span data-i18n="date_apr">April</span> 2022 — <span
+                                        data-i18n="date_jun">June</span> 2024</span>
+                                <p class="timeline-text" data-i18n="timeline_ignou">IGNOU, Lucknow, India.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 data-i18n="edu_inter">Intermediate Degree</h4>
+                                <span class="timeline-date"><span data-i18n="date_apr">April</span> 2020 — <span
+                                        data-i18n="date_mar">March</span> 2022</span>
+                                <p class="timeline-text" data-i18n="timeline_msc">Modern Standard Intermediate College,
+                                    Lucknow, India.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4 data-i18n="edu_hs">High School Diploma</h4>
+                                <span class="timeline-date"><span data-i18n="date_apr">April</span> 2018 — <span
+                                        data-i18n="date_mar">March</span> 2020</span>
+                                <p class="timeline-text" data-i18n="timeline_lcc">Lucknow Christian College, Lucknow,
+                                    India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PORTFOLIO SECTION -->
+                <section class="tab-content" id="portfolio">
+                    <header>
+                        <h2 data-i18n="nav_portfolio">Portfolio</h2>
+                    </header>
+                    <div class="portfolio-grid">
+                        <a href="https://finntv.vercel.app/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="project-card">
+                                <div class="project-thumbnail">
+                                    <img src="images/finntv_premium_ui_1766069898922.png" alt="FinnTV">
+                                    <div class="project-icon">🔗</div>
+                                </div>
+                                <h4 class="project-title" data-i18n="proj_finntv_title">FinnTV (IPTV Infrastructure)
+                                </h4>
+                                <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">PHP, Python,
+                                    Docker, Nginx</p>
+                                <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
+                                        data-i18n="date_oct">October</span> 2025 — <span
+                                        data-i18n="date_present">Present</span></p>
+                            </div>
+                        </a>
+                        <div class="project-card">
+                            <div class="project-thumbnail">
+                                <img src="images/android_rom_premium_visual_1766075789498.png" alt="Android">
+                                <div class="project-icon">👁️</div>
+                            </div>
+                            <h4 class="project-title" data-i18n="proj_android_title">Android Custom ROMs</h4>
+                            <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">Kernel Tuning,
+                                C++,
+                                Java</p>
+                            <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
+                                    data-i18n="date_dec">December</span> 2022 — <span data-i18n="date_jun">June</span>
+                                2024
+                            </p>
+                        </div>
+                        <a href="https://finnerp.vercel.app/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="project-card">
+                                <div class="project-thumbnail">
+                                    <img src="images/finn_erp_dashboard_1766073407673.png" alt="FinnERP">
+                                    <div class="project-icon">🔗</div>
+                                </div>
+                                <h4 class="project-title" data-i18n="proj_finnerp_title">FinnERP System</h4>
+                                <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">React,
+                                    Firebase,
+                                    Tailwind CSS</p>
+                                <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
+                                        data-i18n="date_oct">October</span> 2025 — <span
+                                        data-i18n="date_present">Present</span></p>
+                            </div>
+                        </a>
+                        <a href="https://finninvoice.my-style.in/?i=1" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="project-card">
+                                <div class="project-thumbnail">
+                                    <img src="images/finn_invoice_system_1766073433159.png" alt="Finn Invoice">
+                                    <div class="project-icon">🔗</div>
+                                </div>
+                                <h4 class="project-title" data-i18n="proj_finninv_title">Finn Invoice Ecosystem</h4>
+                                <p class="project-category" style="font-size: 0.8rem; margin-bottom: 5px;">HTML, CSS,
+                                    JavaScript</p>
+                                <p class="project-date" style="font-size: 0.75rem; color: var(--accent);"><span
+                                        data-i18n="date_oct">October</span> 2025 — <span
+                                        data-i18n="date_present">Present</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+
+
+                <!-- CONTACT SECTION -->
+                <section class="tab-content" id="contact">
+                    <header>
+                        <h2 data-i18n="nav_contact">Contact</h2>
+                    </header>
+                    <div style="margin-top: 30px;">
+                        <p style="color: var(--text-secondary); margin-bottom: 30px;" data-i18n="contact_text">
+                            Interested in collaboration or have a technical project? Feel free to reach out via the
+                            contacts
+                            in the sidebar or send me a message.
+                        </p>
+                        <form style="display: grid; gap: 20px;">
+                            <div class="form-row">
+                                <input type="text" placeholder="Full Name" data-i18n="form_name"
+                                    style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;">
+                                <input type="email" placeholder="Email Address" data-i18n="form_email"
+                                    style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;">
+                            </div>
+                            <textarea placeholder="Your Message" rows="5" data-i18n="form_msg"
+                                style="background: transparent; border: 1px solid var(--border-stale); color: white; padding: 15px; border-radius: 12px; font-size: 1rem;"></textarea>
+                            <button type="button" class="btn btn-primary" data-i18n="form_btn"
+                                style="justify-self: end; padding: 15px 40px; border-radius: 12px; cursor: pointer;">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+        <script src="translations.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

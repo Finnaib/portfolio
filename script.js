@@ -1,3 +1,36 @@
+// Hamburger Menu Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const navLinks = document.querySelectorAll('.navbar-link');
+
+    if (menuBtn && sidebar) {
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            menuBtn.classList.toggle('open');
+        });
+
+        // Close menu when link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                menuBtn.classList.remove('open');
+            });
+        });
+
+        // Close when clicking outside on main content
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+            mainContent.addEventListener('click', () => {
+                if (sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                    menuBtn.classList.remove('open');
+                }
+            });
+        }
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Tab Switching Logic
