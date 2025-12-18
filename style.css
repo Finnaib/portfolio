@@ -460,207 +460,139 @@ header h2::after {
 }
 
 @media (max-width: 768px) {
-    body {
+
+    /* --- RESET & LAYOUT --- */
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
         padding: 0;
+        overflow: visible;
+        /* Let body scroll naturally */
+    }
+
+    body {
+        overflow-y: auto;
+        /* Ensure scrolling works */
         background: var(--bg-main);
     }
 
-    .main-container {
-        padding: 0;
-        width: 100%;
-        gap: 0;
-        /* Remove gap */
-    }
-
-    /* --- 1. App-Style Sticky Header --- */
-    .sidebar {
-        /* Sidebar is container, remove sticky from here */
+    /* --- 1. STATIC SCROLLING HEADER (Sidebar) --- */
+    aside.sidebar {
         position: relative;
-        z-index: 1000;
-        border-radius: 0;
+        /* Scrolls with page */
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 20px 20px;
+        background: var(--bg-sidebar);
         border: none;
-        background: transparent;
-        backdrop-filter: none;
-        box-shadow: none;
+        border-bottom: 1px solid var(--border-stale);
+        border-radius: 0;
+        z-index: 1;
 
         display: flex;
         flex-direction: column;
-        padding: 0 20px;
-        /* Reduced padding top */
-        padding-top: 0;
+        align-items: center;
+        /* Center everything */
+        text-align: center;
+        gap: 15px;
     }
 
+    /* Reset Header Row hacks */
     .sidebar-header-row {
-        position: sticky;
-        top: 0;
-        z-index: 1010;
-        background: rgba(30, 30, 31, 0.98);
-        width: 100vw;
-        margin-left: -20px;
-        padding: 10px 20px;
-        border-bottom: 1px solid var(--border-stale);
+        position: static;
         display: flex;
-        align-items: center;
-        gap: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        /* Stack image/name */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        gap: 15px;
     }
 
     .profile-img-box img {
-        width: 45px;
-        height: 45px;
+        width: 80px;
+        /* Nice standard size */
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 20px;
+        /* Softer rect */
+    }
+
+    .header-info-col {
+        align-items: center;
+        width: 100%;
     }
 
     .sidebar h1 {
-        font-size: 1rem;
-        margin: 0;
-        text-align: left;
-        line-height: 1.2;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
 
     .sidebar-title {
-        background: transparent;
-        padding: 0;
-        margin: 0;
-        color: var(--text-muted);
-        font-size: 0.75rem;
-        text-align: left;
-        line-height: 1.2;
-    }
-
-    /* Fix Download Link Visibility */
-    .sidebar a {
-        color: var(--accent);
-        font-size: 0.8rem;
-        margin-top: 5px;
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 6px 16px;
+        border-radius: 20px;
         display: inline-block;
     }
 
-
-    /* Flex Header Row */
-    .sidebar-header-row {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    /* Language Selector specific for mobile header */
     #lang-selector {
-        width: auto !important;
-        padding: 4px 8px !important;
-        font-size: 0.8rem !important;
-        border: 1px solid var(--border-stale) !important;
-        background: rgba(255, 255, 255, 0.05) !important;
-        border-radius: 6px;
-        color: var(--text-muted);
-    }
-
-    /* --- 2. Horizontal Contact Chips --- */
-    .contacts-list {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        padding: 0;
-        gap: 10px;
-        border-top: none;
-        scrollbar-width: none;
-        /* Hide scrollbar Firefox */
-        -ms-overflow-style: none;
-        /* Hide scrollbar IE */
-    }
-
-    .contacts-list::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Ensure content padding accounts for sticky header height */
-    .content-card {
-        padding-top: 10px;
-    }
-
-    .contact-item {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 8px 12px;
-        border-radius: 50px;
-        flex-shrink: 0;
-        gap: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .icon-box {
-        width: 24px;
-        height: 24px;
-        font-size: 0.9rem;
-        background: transparent;
-        box-shadow: none;
-    }
-
-    .contact-info h4 {
-        display: none;
-        /* Hide labels like EMAIL, PHONE */
-    }
-
-    .contact-info p,
-    .contact-info a {
-        font-size: 0.75rem;
-        color: var(--text-secondary);
-    }
-
-    /* Make Resume Button a Chip too */
-    .contacts-list .btn {
-        margin: 0 !important;
-        width: auto !important;
-        padding: 8px 16px !important;
+        position: absolute;
+        /* Top right corner */
+        top: 20px;
+        right: 20px;
+        width: auto;
+        padding: 6px 12px;
         font-size: 0.8rem;
-        border-radius: 50px;
-        white-space: nowrap;
+        background: rgba(0, 0, 0, 0.3);
     }
 
-    /* --- 3. Body Content --- */
-    /* Ensure content padding accounts for sticky header height */
-    .content-card {
-        padding-top: 25px;
-        /* More breathing room */
-        min-height: auto;
-        padding-bottom: 100px;
-        border-radius: 0;
-        border: none;
-        background: transparent;
-        box-shadow: none;
+    /* --- CONTACTS (Static Top List) --- */
+    .contacts-list {
+        display: none;
+        /* Simplify: Hide top contacts */
     }
 
-    /* --- 4. Floating Glass Dock Navbar --- */
+    /* --- 2. BOTTOM NAVIGATION BAR --- */
     .navbar {
         position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 400px;
-        background: rgba(30, 30, 31, 0.9);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 12px 0;
-        top: auto;
-        padding-bottom: 12px;
-        /* Override safe area for floating look */
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #18181b;
+        /* Solid Dark */
+        border: none;
+        border-top: 1px solid var(--border-stale);
+        border-radius: 0;
+        padding: 10px 0 25px 0;
+        /* Extra bottom padding for safe area */
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        transform: none;
+        max-width: 100%;
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
     }
 
     .navbar-list {
-        justify-content: space-evenly;
         width: 100%;
+        justify-content: space-around;
+        /* Even spacing */
         gap: 0;
     }
 
     .navbar-link {
-        font-size: 0.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
+        font-size: 0.7rem;
+        /* Label size */
         opacity: 0.6;
+        gap: 6px;
     }
 
     .navbar-link.active {
@@ -669,53 +601,58 @@ header h2::after {
     }
 
     .navbar-link::before {
-        content: '●';
-        /* Dot indicator or icon? text is better for now */
-        font-size: 1.2rem;
-        line-height: 1;
-        margin-bottom: -5px;
         display: block;
+        margin-bottom: 2px;
+        font-size: 1.2rem;
     }
 
-    /* --- 5. Mobile Tab Refinements (About & Contact) --- */
 
-    /* Contact Form Stacking */
+    /* --- 3. MAIN CONTENT --- */
+    .main-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-card {
+        padding: 20px 20px 120px 20px;
+        /* Big bottom padding for navbar */
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    /* Make Forms Nice */
     .form-row {
-        grid-template-columns: 1fr !important;
-        /* Stack vertically */
+        grid-template-columns: 1fr;
         gap: 15px;
     }
 
     input,
     textarea {
-        padding: 18px !important;
-        /* Larger touch target */
-        font-size: 1rem !important;
-    }
-
-    /* About Text Readability */
-    .tab-content#about p {
-        font-size: 1.05rem;
-        line-height: 1.7;
-        margin-bottom: 25px !important;
-        color: #e0e0e0;
-        /* Slightly brighter for readability */
-    }
-
-    /* Headers breathing room */
-    h2,
-    h3 {
-        margin-top: 10px;
-    }
-
-    /* Fix fonts */
-    p {
-        font-size: 0.95rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-stale);
     }
 
     /* Skills Grid */
     .skills-list {
         grid-template-columns: 1fr;
+        /* Stack skills */
+        gap: 10px;
+    }
+
+    /* Typography */
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 }
 
