@@ -13,6 +13,10 @@
     --shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -401,11 +405,44 @@ header h2::after {
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
     }
 
     .sidebar {
         width: 100%;
         position: static;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar .profile-img-box {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.25rem;
+    }
+
+    .sidebar-title {
+        margin-bottom: 15px;
+        padding: 4px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Compact contact list for mobile/tablet sidebar */
+    .contacts-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 0;
     }
 }
 
@@ -429,6 +466,8 @@ header h2::after {
         z-index: 2000;
         background: rgba(30, 30, 31, 0.95);
         backdrop-filter: blur(10px);
+        padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        /* Safe area for iPhone X+ */
     }
 
     .navbar-list {
@@ -438,6 +477,24 @@ header h2::after {
     .content-card {
         padding: 20px;
         padding-bottom: 100px;
+    }
+
+    /* Skills: 1 Column on Mobile */
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        /* Ensure projects don't get too squashed */
+        min-width: 100%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
     }
 }
 
