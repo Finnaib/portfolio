@@ -29,6 +29,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Prevent body scroll when menu is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* Base Form Logic */
 .form-row {
     display: grid;

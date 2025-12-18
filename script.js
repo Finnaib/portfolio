@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBtn.addEventListener('click', () => {
             sidebar.classList.toggle('active');
             menuBtn.classList.toggle('open');
+            document.body.classList.toggle('no-scroll'); // Lock/Unlock Body Scroll
         });
 
         // Close when clicking outside on main content
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (sidebar.classList.contains('active')) {
                     sidebar.classList.remove('active');
                     menuBtn.classList.remove('open');
+                    document.body.classList.remove('no-scroll');
                 }
             });
         }
@@ -54,6 +56,7 @@ window.changeTab = function (tabName) {
     if (sidebar && sidebar.classList.contains('active')) {
         sidebar.classList.remove('active');
         if (menuBtn) menuBtn.classList.remove('open');
+        document.body.classList.remove('no-scroll');
     }
 
     // 4. Scroll to top of content
