@@ -526,13 +526,17 @@ header h2::after {
     }
 
     /* Language Selector specific for mobile header */
+    /* Language Selector specific for mobile header */
     #lang-selector {
         width: auto !important;
         padding: 4px 8px !important;
-        font-size: 1.2rem !important;
-        /* Flag only? */
-        border: none !important;
-        background: transparent !important;
+        font-size: 0.9rem !important;
+        /* Smaller font for full names */
+        /* Flag only? No, full name now */
+        border: 1px solid var(--border-stale) !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 6px;
+        color: var(--text-muted);
     }
 
     /* --- 2. Horizontal Contact Chips --- */
@@ -553,6 +557,11 @@ header h2::after {
 
     .contacts-list::-webkit-scrollbar {
         display: none;
+    }
+
+    /* Ensure content padding accounts for sticky header height */
+    .content-card {
+        padding-top: 10px;
     }
 
     .contact-item {
