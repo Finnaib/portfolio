@@ -45,18 +45,33 @@
                         <a href="mailto:shoaibwwe01@gmail.com">shoaibwwe01@gmail.com</a>
                     </div>
                 </div>
-                <!-- More contacts... -->
+                <div class="contact-item">
+                    <div class="icon-box">📱</div>
+                    <div class="contact-info">
+                        <h4 data-i18n="lbl_phone">Phone</h4>
+                        <p>+91-9369890468</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-box">📍</div>
+                    <div class="contact-info">
+                        <h4 data-i18n="lbl_loc">Location</h4>
+                        <p data-i18n="location">Cairo, Egypt</p>
+                    </div>
+                </div>
+
+                <a href="resume.html" class="btn btn-primary"
+                    style="margin-top: 20px; width: 100%; text-align: center; display: block;"
+                    data-i18n="download_resume">Download Resume</a>
             </div>
 
-            <!-- NAVIGATION LINKS (Restored in Drawer) -->
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-link active" onclick="changeTab('about')" data-i18n="nav_about">About</li>
-                    <li class="navbar-link" onclick="changeTab('resume')" data-i18n="nav_resume">Resume</li>
-                    <li class="navbar-link" onclick="changeTab('portfolio')" data-i18n="nav_portfolio">Portfolio</li>
-                    <li class="navbar-link" onclick="changeTab('contact')" data-i18n="nav_contact">Contact</li>
-                </ul>
-            </nav>
+            <!-- MOBILE NAV LINKS (Visible in Drawer Only) -->
+            <ul class="mobile-nav-list">
+                <li class="navbar-link active" onclick="changeTab('about')" data-i18n="nav_about">About</li>
+                <li class="navbar-link" onclick="changeTab('resume')" data-i18n="nav_resume">Resume</li>
+                <li class="navbar-link" onclick="changeTab('portfolio')" data-i18n="nav_portfolio">Portfolio</li>
+                <li class="navbar-link" onclick="changeTab('contact')" data-i18n="nav_contact">Contact</li>
+            </ul>
         </aside>
 
         <!-- MOBILE HEADER (Hamburger) -->
@@ -70,25 +85,6 @@
         </div>
 
         <main class="main-content">
-            <div class="contact-item">
-                <div class="icon-box">📱</div>
-                <div class="contact-info">
-                    <h4 data-i18n="lbl_phone">Phone</h4>
-                    <p>+91-9369890468</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <div class="icon-box">📍</div>
-                <div class="contact-info">
-                    <h4 data-i18n="lbl_loc">Location</h4>
-                    <p data-i18n="location">Cairo, Egypt</p>
-                </div>
-            </div>
-            <!-- Action to Resume.html -->
-            <a href="resume.html" class="btn btn-primary" style="margin-top: 20px; width: 100%;"
-                data-i18n="download_resume">Download Resume</a>
-            </div>
-            </aside>
 
             <!-- MAIN CONTENT -->
             <div class="content-card">
