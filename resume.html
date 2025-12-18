@@ -8,56 +8,58 @@
     <style>
         /* ATS-Friendly Standards: High Contrast, Single Column, Standard Fonts */
         body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            /* Safest ATS fonts */
             background: #ffffff;
             color: #000000;
-            line-height: 1.25;
-            /* Tighter line height */
-            padding: 20px 30px;
-            max-width: 850px;
+            line-height: 1.3;
+            padding: 0;
             margin: 0 auto;
+            max-width: 210mm;
+            /* Match A4 width */
+            box-sizing: border-box;
         }
 
         header {
             text-align: center;
-            margin-bottom: 8px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 6px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
         }
 
         header h1 {
-            font-size: 20pt;
-            /* Reduced from 22pt */
+            font-size: 24pt;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             font-weight: 700;
         }
 
         .contact-info {
             font-size: 10pt;
-            margin-top: 4px;
+            margin-top: 5px;
         }
 
         section {
-            margin-bottom: 10px;
-            page-break-inside: avoid;
+            margin-bottom: 12px;
+            page-break-inside: auto;
+            /* Allow breaks within sections if needed */
         }
 
         h2 {
-            font-size: 11.5pt;
+            font-size: 12pt;
             text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #000;
             padding-bottom: 2px;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             font-weight: 700;
-            color: #333;
+            color: #000;
         }
 
         .item {
-            margin-bottom: 6px;
-            /* Reduced from 8px */
+            margin-bottom: 8px;
             page-break-inside: avoid;
+            /* Keep individual items together */
         }
 
         .item-header {
@@ -73,12 +75,13 @@
             justify-content: space-between;
             font-size: 10pt;
             font-style: italic;
-            margin-bottom: 4px;
-            color: #444;
+            margin-bottom: 2px;
+            color: #000;
+            /* Pure black for ATS/Print */
         }
 
         ul {
-            margin-left: 16px;
+            margin-left: 18px;
             padding-left: 0;
             padding-bottom: 0;
             margin-bottom: 0;
@@ -86,32 +89,31 @@
         }
 
         li {
-            font-size: 9pt;
-            /* Reduced from 9.5pt */
-            margin-bottom: 1px;
+            font-size: 10pt;
+            margin-bottom: 2px;
             text-align: justify;
         }
 
         .summary p {
-            font-size: 9.5pt;
+            font-size: 10pt;
             text-align: justify;
             margin: 0;
-            line-height: 1.3;
+            line-height: 1.4;
         }
 
         .skills-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 4px;
-            /* Tighter gap */
-            margin-top: 4px;
+            gap: 5px;
+            margin-top: 5px;
         }
 
         .skills-list div {
-            font-size: 9.5pt;
+            font-size: 10pt;
             font-weight: 500;
         }
 
+        /* Controls for web view */
         .btn-controls {
             position: fixed;
             top: 20px;
@@ -120,12 +122,16 @@
             flex-direction: column;
             gap: 10px;
             z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
         }
 
         .btn {
             background: #222;
             color: #fff;
-            padding: 10px 15px;
+            padding: 8px 12px;
             border-radius: 4px;
             border: none;
             cursor: pointer;
@@ -133,320 +139,230 @@
             font-size: 10pt;
             font-weight: bold;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .btn:hover {
             background: #444;
         }
 
+        /* Print Settings */
         @page {
             size: A4;
-            margin: 1cm;
-            /* Restore margins so page 2 doesn't start at the top edge */
+            margin: 1.27cm;
+            /* Standard 0.5 inch margins */
         }
 
         @media print {
             .btn-controls {
-                display: none;
+                display: none !important;
             }
 
             body {
-                padding: 0;
-                margin: 0;
                 width: 100%;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
-            section {
-                break-inside: avoid;
-            }
-
-            .item {
-                break-inside: avoid;
+            a {
+                text-decoration: none;
+                color: #000;
             }
         }
     </style>
+
 </head>
 
 <body>
-
-    <div class="btn-controls">
-        <select id="lang-selector" onchange="changeLanguage(this.value)"
+    <div class="btn-controls"><select id="lang-selector" onchange="changeLanguage(this.value)"
             style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; cursor: pointer; font-weight: bold;">
             <option value="en">🇺🇸 English</option>
             <option value="ar">🇸🇦 Arabic</option>
             <option value="zh">🇨🇳 Chinese</option>
             <option value="ko">🇰🇷 Korean</option>
-        </select>
-        <button onclick="window.print()" class="btn" data-i18n="print_btn">Print / Save as PDF</button>
-        <a href="index.html" class="btn" data-i18n="back_btn">Back to Portfolio</a>
-    </div>
-
+        </select><button onclick="window.print()" class="btn" data-i18n="print_btn">Print / Save as PDF</button><a
+            href="index.html" class="btn" data-i18n="back_btn">Back to Portfolio</a></div>
     <header>
         <h1>MOHD SHOAIB</h1>
-        <div class="contact-info">
-            Cairo, Egypt | +91-9369890468 | shoaibwwe01@gmail.com
-        </div>
+        <div class="contact-info">Cairo,
+            Egypt |+91-9369890468 | shoaibwwe01@gmail.com </div>
     </header>
-
     <section class="summary">
         <h2 data-i18n="res_summary_title">Professional Summary</h2>
-        <p data-i18n="res_summary_text">
-            Dedicated IT Help Desk professional with over 10 years of experience providing technical support for
-            Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network
-            security management, system administration, and end-user support. Skilled in diagnosing and resolving
-            technical
-            issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced
-            environments with a strong commitment to improving operational efficiency and minimizing downtime.
-        </p>
+        <p data-i18n="res_summary_text">Dedicated IT Help Desk professional with over 10 years of experience providing
+            technical support for Windows, Linux, and macOS environments. Proven expertise in hardware and software
+            troubleshooting, network security management, system administration, and end-user support. Skilled in
+            diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security.
+            Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and
+            minimizing downtime. </p>
     </section>
-
     <section>
         <h2 data-i18n="res_exp_title">Work Experience</h2>
-
         <div class="item">
-            <div class="item-header">
-                <span><span data-i18n="role_it_officer">IT Officer</span> <span data-i18n="role_part_time"
-                        style="font-size: 0.9em; font-weight: normal;">(Part-time)</span></span>
-                <span><span data-i18n="date_nov">November</span> 2025 — <span
-                        data-i18n="date_present">Present</span></span>
+            <div class="item-header"><span><span data-i18n="role_it_officer">IT Officer</span><span
+                        data-i18n="role_part_time"
+                        style="font-size: 0.9em; font-weight: normal;">(Part-time)</span></span><span><span
+                        data-i18n="date_nov">November</span> 2025 — <span data-i18n="date_present">Present</span></span>
             </div>
-            <div class="item-sub">
-                <span>Grand Wolf</span>
-                <span data-i18n="loc_cairo">Cairo, Egypt</span>
-            </div>
+            <div class="item-sub"><span>Grand Wolf</span><span data-i18n="loc_cairo">Cairo, Egypt</span></div>
             <ul>
                 <li data-i18n="exp_gw_1">Spearheaded the technical operations and security infrastructure for a premier
                     security firm,
                     ensuring 99.9% system uptime through proactive maintenance and monitoring.</li>
                 <li data-i18n="exp_gw_2">Orchestrated the stability of critical infrastructure across 5 regional
-                    offices, supporting over 200
-                    endpoints with robust networking solutions.</li>
-                <li data-i18n="exp_gw_3">Enforced comprehensive security protocols for a fleet of 150+ mobile and
-                    desktop assets,
+                    offices, supporting over 200 endpoints with robust networking solutions.</li>
+                <li data-i18n="exp_gw_3">Enforced comprehensive security protocols for a fleet of 150+mobile and desktop
+                    assets,
                     successfully reducing asset loss and unauthorized access incidents by 95%.</li>
                 <li data-i18n="exp_gw_4">Resolved complex technical issues for end-users, maintaining a high
-                    satisfaction rate and ensuring
-                    minimal disruption to business operations.</li>
+                    satisfaction rate and ensuring minimal disruption to business operations.</li>
             </ul>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="role_tech_support">IT Tech Support Manager</span>
-                <span><span data-i18n="date_jan">January</span> 2019 — <span data-i18n="date_jan">January</span>
-                    2024</span>
+            <div class="item-header"><span data-i18n="role_tech_support">IT Tech Support Manager</span><span><span
+                        data-i18n="date_jan">January</span> 2019 — <span data-i18n="date_jan">January</span> 2024</span>
             </div>
-            <div class="item-sub">
-                <span>AGI Institute</span>
-                <span><span data-i18n="loc_lucknow">Lucknow, India</span></span>
-            </div>
+            <div class="item-sub"><span>AGI Institute</span><span><span data-i18n="loc_lucknow">Lucknow,
+                        India</span></span></div>
             <ul>
                 <li data-i18n="exp_agi_mgr_1">Directed comprehensive IT support services for institutional programs,
-                    leading a high-performing
-                    team of 4 technicians to resolve over 50 technical tickets weekly.</li>
+                    leading a high-performing team of 4 technicians to resolve over 50 technical tickets weekly.</li>
                 <li data-i18n="exp_agi_mgr_2">Administered Active Directory, Office 365, and VPN network configurations
                     for a user base of 500+,
                     achieving a 98% resolution rate within strict Service Level Agreements (SLA).</li>
                 <li data-i18n="exp_agi_mgr_3">Established scalable backup solutions and disaster recovery protocols,
-                    reducing the
-                    risk of potential data loss by 40% and ensuring business continuity.</li>
+                    reducing the risk of potential data loss by 40% and ensuring business continuity.</li>
                 <li data-i18n="exp_agi_mgr_4">Conducted regular training sessions for staff on cybersecurity best
-                    practices, significantly
-                    reducing phishing susceptibility and improving overall network security posture.</li>
+                    practices, significantly reducing phishing susceptibility and improving overall network security
+                    posture.</li>
                 <li data-i18n="exp_agi_mgr_5">Streamlined procurement processes for IT hardware and software, resulting
-                    in a 15% reduction in
-                    operational IT costs annually.</li>
+                    in a 15% reduction in operational IT costs annually.</li>
             </ul>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="role_hw_tech">Hardware Technician</span>
-                <span><span data-i18n="date_jan">January</span> 2016 — <span data-i18n="date_dec">December</span>
+            <div class="item-header"><span data-i18n="role_hw_tech">Hardware Technician</span><span><span
+                        data-i18n="date_jan">January</span> 2016 — <span data-i18n="date_dec">December</span>
                     2018</span>
             </div>
-            <div class="item-sub">
-                <span>AGI Institute</span>
-                <span><span data-i18n="loc_lucknow">Lucknow, India</span></span>
-            </div>
+            <div class="item-sub"><span>AGI Institute</span><span><span data-i18n="loc_lucknow">Lucknow,
+                        India</span></span></div>
             <ul>
                 <li data-i18n="exp_agi_hw_1">Provided essential hardware support and lifecycle maintenance for over 100
-                    workstations, ensuring
-                    optimal performance and longevity of equipment.</li>
+                    workstations, ensuring optimal performance and longevity of equipment.</li>
                 <li data-i18n="exp_agi_hw_2">Diagnosed and resolved complex hardware failures in both server and client
-                    environments, achieving a
-                    consistent 95% first-visit fix rate.</li>
+                    environments, achieving a consistent 95% first-visit fix rate.</li>
                 <li data-i18n="exp_agi_hw_3">Managed inventory of computer peripherals and components, ensuring timely
-                    replacements and
-                    minimizing downtime for critical academic staff.</li>
+                    replacements and minimizing downtime for critical academic staff.</li>
                 <li data-i18n="exp_agi_hw_4">Collaborated with senior IT staff to upgrade network cabling and server
                     room infrastructure,
                     improving overall network speed and reliability.</li>
             </ul>
         </div>
     </section>
-
     <section>
         <h2 data-i18n="res_edu_title">Education</h2>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="edu_arabic">Basic Arabic Language</span>
-                <span><span data-i18n="date_sep">September</span> 2024 — <span
+            <div class="item-header"><span data-i18n="edu_arabic">Basic Arabic Language</span><span><span
+                        data-i18n="date_sep">September</span> 2024 — <span
                         data-i18n="date_present">Present</span></span>
             </div>
-            <div class="item-sub">
-                <span>Markaz Tatweer (Al Azhar)</span>
-                <span data-i18n="loc_cairo">Cairo, Egypt</span>
+            <div class="item-sub"><span>Markaz Tatweer (Al Azhar)</span><span data-i18n="loc_cairo">Cairo, Egypt</span>
             </div>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span><span data-i18n="edu_bca">Bachelor of Computer Application (BCA)</span> <span
+            <div class="item-header"><span><span data-i18n="edu_bca">Bachelor of Computer Application (BCA)</span><span
                         style="font-size: 0.9em; font-weight: normal; opacity: 0.8;" data-i18n="edu_dropped">(Dropped
-                        Out)</span></span>
-                <span><span data-i18n="date_apr">April</span> 2022 — <span data-i18n="date_jun">June</span>
-                    2024</span>
-            </div>
-            <div class="item-sub">
-                <span>IGNOU</span>
-                <span data-i18n="loc_lucknow">Lucknow, India</span>
-            </div>
+                        Out)</span></span><span><span data-i18n="date_apr">April</span> 2022 — <span
+                        data-i18n="date_jun">June</span> 2024</span></div>
+            <div class="item-sub"><span>IGNOU</span><span data-i18n="loc_lucknow">Lucknow, India</span></div>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="edu_inter">Intermediate Degree</span>
-                <span><span data-i18n="date_apr">April</span> 2020 — <span data-i18n="date_mar">March</span> 2022</span>
+            <div class="item-header"><span data-i18n="edu_inter">Intermediate Degree</span><span><span
+                        data-i18n="date_apr">April</span> 2020 — <span data-i18n="date_mar">March</span> 2022</span>
             </div>
-            <div class="item-sub">
-                <span>Modern Standard Intermediate College</span>
-                <span data-i18n="loc_lucknow">Lucknow, India</span>
-            </div>
+            <div class="item-sub"><span>Modern Standard Intermediate College</span><span
+                    data-i18n="loc_lucknow">Lucknow, India</span></div>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="edu_hs">High School Diploma</span>
-                <span><span data-i18n="date_apr">April</span> 2018 — <span data-i18n="date_mar">March</span> 2020</span>
+            <div class="item-header"><span data-i18n="edu_hs">High School Diploma</span><span><span
+                        data-i18n="date_apr">April</span> 2018 — <span data-i18n="date_mar">March</span> 2020</span>
             </div>
-            <div class="item-sub">
-                <span>Lucknow Christian College</span>
-                <span data-i18n="loc_lucknow">Lucknow, India</span>
-            </div>
+            <div class="item-sub"><span>Lucknow Christian College</span><span data-i18n="loc_lucknow">Lucknow,
+                    India</span></div>
         </div>
     </section>
-
     <section>
         <h2 data-i18n="res_proj_title">Technical Projects</h2>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="proj_finntv_title">FinnTV - IPTV Infrastructure</span>
-                <span><span data-i18n="date_oct">October</span> 2025 — <span
-                        data-i18n="date_present">Present</span></span>
+            <div class="item-header"><span data-i18n="proj_finntv_title">FinnTV - IPTV Infrastructure</span><span><span
+                        data-i18n="date_oct">October</span> 2025 — <span data-i18n="date_present">Present</span></span>
             </div>
-            <div class="item-sub">
-                <span data-i18n="role_full_stack">Full Stack Developer</span>
-                <span><span data-i18n="loc_remote">Remote</span></span>
-            </div>
+            <div class="item-sub"><span data-i18n="role_full_stack">Full Stack Developer</span><span><span
+                        data-i18n="loc_remote">Remote</span></span></div>
             <ul>
                 <li data-i18n="proj_finntv_1">Architected a high-performance IPTV streaming infrastructure capable of
-                    handling over 10,000 daily
-                    active requests with minimal latency.</li>
+                    handling over 10, 000 daily active requests with minimal latency.</li>
                 <li data-i18n="proj_finntv_2">Utilized a robust tech stack including PHP, Python, Docker, and Nginx to
-                    ensure scalability and
-                    reliability of the streaming service.</li>
+                    ensure scalability and reliability of the streaming service.</li>
                 <li data-i18n="proj_finntv_3">Integrated automated monitoring tools to track stream health and server
-                    performance, reducing
-                    downtime by 40% through proactive maintenance.</li>
+                    performance, reducing downtime by 40% through proactive maintenance.</li>
                 <li data-i18n="proj_finntv_4">Deployed security measures to protect content and user data, ensuring
-                    compliance with industry
-                    standards.</li>
+                    compliance with industry standards.</li>
             </ul>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="proj_finnerp_title">FinnERP - Enterprise Management System</span>
-                <span><span data-i18n="date_oct">October</span> 2025 — <span
-                        data-i18n="date_present">Present</span></span>
-            </div>
-            <div class="item-sub">
-                <span data-i18n="role_frontend">Lead Frontend Developer</span>
-                <span><span data-i18n="loc_remote">Remote</span></span>
-            </div>
+            <div class="item-header"><span data-i18n="proj_finnerp_title">FinnERP - Enterprise Management
+                    System</span><span><span data-i18n="date_oct">October</span> 2025 — <span
+                        data-i18n="date_present">Present</span></span></div>
+            <div class="item-sub"><span data-i18n="role_frontend">Lead Frontend Developer</span><span><span
+                        data-i18n="loc_remote">Remote</span></span></div>
             <ul>
                 <li data-i18n="proj_finnerp_1">Developed a comprehensive enterprise resource planning (ERP) system using
-                    React, Firebase, and
-                    Tailwind CSS, modernizing internal workflows.</li>
+                    React, Firebase, and Tailwind CSS, modernizing internal workflows.</li>
                 <li data-i18n="proj_finnerp_2">Automated critical reporting processes, reducing manual data entry and
-                    reporting time by 40% for the
-                    finance and HR departments.</li>
+                    reporting time by 40% for the finance and HR departments.</li>
                 <li data-i18n="proj_finnerp_3">Designed an intuitive and responsive user interface, improving user
-                    adoption rates and reducing
-                    training time for new employees.</li>
+                    adoption rates and reducing training time for new employees.</li>
                 <li data-i18n="proj_finnerp_4">Integrated real-time data synchronization features to ensure accurate and
-                    up-to-date information
-                    across all modules.</li>
+                    up-to-date information across all modules.</li>
             </ul>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="proj_finninv_title">Finn Invoice - Billing Ecosystem</span>
-                <span><span data-i18n="date_oct">October</span> 2025 — <span
-                        data-i18n="date_present">Present</span></span>
-            </div>
-            <div class="item-sub">
-                <span data-i18n="role_frontend">Frontend Developer</span>
-                <span><span data-i18n="loc_remote">Remote</span></span>
-            </div>
+            <div class="item-header"><span data-i18n="proj_finninv_title">Finn Invoice - Billing
+                    Ecosystem</span><span><span data-i18n="date_oct">October</span> 2025 — <span
+                        data-i18n="date_present">Present</span></span></div>
+            <div class="item-sub"><span data-i18n="role_frontend">Frontend Developer</span><span><span
+                        data-i18n="loc_remote">Remote</span></span></div>
             <ul>
                 <li data-i18n="proj_finninv_1">Engineered a robust billing and invoicing ecosystem using HTML, CSS, and
-                    JavaScript, processing
-                    monthly invoices with 100% accuracy.</li>
+                    JavaScript, processing monthly invoices with 100% accuracy.</li>
                 <li data-i18n="proj_finninv_2">Applied custom validation logic to prevent data entry errors, ensuring
-                    financial data integrity
-                    and reducing billing disputes.</li>
+                    financial data integrity and reducing billing disputes.</li>
                 <li data-i18n="proj_finninv_3">Refined the application for performance, ensuring fast load times and
-                    smooth operation even with
-                    large datasets.</li>
+                    smooth operation even with large datasets.</li>
                 <li data-i18n="proj_finninv_4">Created a user-friendly dashboard for tracking invoice status and payment
-                    history, enhancing
-                    financial visibility for clients.</li>
+                    history, enhancing financial visibility for clients.</li>
             </ul>
         </div>
-
         <div class="item">
-            <div class="item-header">
-                <span data-i18n="proj_android_title">Android Kernel Optimization</span>
-                <span><span data-i18n="date_dec">December</span> 2022 — <span data-i18n="date_jun">June</span>
-                    2024</span>
+            <div class="item-header"><span data-i18n="proj_android_title">Android Kernel Optimization</span><span><span
+                        data-i18n="date_dec">December</span> 2022 — <span data-i18n="date_jun">June</span> 2024</span>
             </div>
-            <div class="item-sub">
-                <span data-i18n="role_sys_dev">System Developer</span>
-                <span><span data-i18n="loc_remote">Remote</span></span>
-            </div>
+            <div class="item-sub"><span data-i18n="role_sys_dev">System Developer</span><span><span
+                        data-i18n="loc_remote">Remote</span></span></div>
             <ul>
                 <li data-i18n="proj_android_1">Enhanced Android kernel parameters using C++, Java, and Shell scripting,
-                    successfully boosting
-                    device battery life by 20% across supported devices.</li>
+                    successfully boosting device battery life by 20% across supported devices.</li>
                 <li data-i18n="proj_android_2">Analyzed system logs and performance metrics to identify bottlenecks and
-                    implement targeted
-                    improvements in process scheduling and memory management.</li>
+                    implement targeted improvements in process scheduling and memory management.</li>
                 <li data-i18n="proj_android_3">Collaborated with the open-source community to test and validate patches,
-                    ensuring stability and
-                    compatibility across different device models.</li>
+                    ensuring stability and compatibility across different device models.</li>
                 <li data-i18n="proj_android_4">Released custom ROMs and kernels that were downloaded and used by a
-                    community of over 5,000 users.
-                </li>
+                    community of over 5, 000 users. </li>
             </ul>
         </div>
     </section>
-
     <section>
         <h2 data-i18n="res_skills_title">Core Skills & Languages</h2>
         <div class="skills-list">
@@ -461,14 +377,14 @@
             <div data-i18n="skill_ar">• Arabic (Beginner)</div>
         </div>
     </section>
-
     <script src="translations.js"></script>
-    <script>
-        function changeLanguage(lang) {
+    <script>function changeLanguage(lang) {
             // Update Dictionary
             const dict = translations[lang];
+
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
+
                 if (dict[key]) {
                     el.textContent = dict[key];
                 }
@@ -482,13 +398,16 @@
                 document.documentElement.setAttribute('dir', 'rtl');
                 body.style.direction = 'rtl';
                 body.style.textAlign = 'right';
+
                 // Specific alignment corrections
                 document.querySelectorAll('.item-header, .item-sub').forEach(el => {
                     // Flexbox usually handles RTL flips automatically, but ensure justification is correct
                 });
                 document.querySelectorAll('li').forEach(el => el.style.textAlign = 'right');
                 document.querySelectorAll('p').forEach(el => el.style.textAlign = 'right');
-            } else {
+            }
+
+            else {
                 document.documentElement.setAttribute('dir', 'ltr');
                 body.style.direction = 'ltr';
                 body.style.textAlign = 'left';
@@ -505,7 +424,6 @@
         document.getElementById('lang-selector').value = savedLang;
         changeLanguage(savedLang);
     </script>
-
 </body>
 
 </html>
