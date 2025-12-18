@@ -153,6 +153,12 @@ body {
 }
 
 /* Main Content Styling */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
 .content-card {
     flex: 1;
     background: var(--bg-card);
