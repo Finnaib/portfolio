@@ -604,6 +604,8 @@ header h2::after {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding-bottom: 100px;
+        /* Ensure bottom content is reachable */
     }
 
     /* Active State (Slide In) */

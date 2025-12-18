@@ -13,6 +13,24 @@ const translations = {
         "download_resume": "Download Resume",
         "about_me": "About Me",
 
+        // Contact & Sidebar
+        "lbl_email": "EMAIL",
+        "lbl_phone": "PHONE",
+        "lbl_loc": "LOCATION",
+        "form_name": "Full Name",
+        "form_email": "Email Address",
+        "form_msg": "Your Message",
+        "form_btn": "Send Message",
+        "contact_text": "Interested in collaboration or have a technical project? Feel free to reach out via the contacts in the sidebar or send me a message.",
+
+        // Tech Stack
+        "tech_react": "React.js & Tailwind (v18)",
+        "tech_php": "PHP & Xtream/IPTV APIs",
+        "tech_cloud": "Cloud (Vercel/Docker)",
+        "tech_python": "Python & Automation",
+        "tech_android": "Android Kernel & ROMs",
+        "tech_ui": "UI/UX Design (Figma)",
+
         // Timeline Summaries
         "timeline_gw": "Grand Wolf, Cairo, Egypt. Directing technical operations and security infrastructure for a premier security firm.",
         "timeline_agi": "AGI Institute, Lucknow, India. Managed IT support for institutional programs, Active Directory, Office 365, and VPN configurations.",
@@ -134,6 +152,14 @@ const translations = {
         "timeline_ignou": "الجامعة الوطنية المفتوحة أنديرا غاندي (IGNOU)، لكناو، الهند.",
         "timeline_msc": "الكلية المتوسطة القياسية الحديثة، لكناو، الهند.",
         "timeline_lcc": "كلية لكناو المسيحية، لكناو، الهند.",
+
+        // Tech Stack
+        "tech_react": "React.js & Tailwind (v18)",
+        "tech_php": "PHP & Xtream/IPTV APIs",
+        "tech_cloud": "الحوسبة السحابية (Vercel/Docker)",
+        "tech_python": "Python والأتمتة",
+        "tech_android": "نواة Android و ROMs",
+        "tech_ui": "تصميم UI/UX (Figma)",
 
         // Contact & Sidebar
         "lbl_email": "البريد الإلكتروني",
@@ -271,6 +297,14 @@ const translations = {
         "timeline_msc": "Modern Standard Intermediate College，印度勒克瑙。",
         "timeline_lcc": "Lucknow Christian College，印度勒克瑙。",
 
+        // Tech Stack
+        "tech_react": "React.js & Tailwind (v18)",
+        "tech_php": "PHP & Xtream/IPTV API",
+        "tech_cloud": "云服务 (Vercel/Docker)",
+        "tech_python": "Python & 自动化",
+        "tech_android": "Android 内核 & ROM",
+        "tech_ui": "UI/UX 设计 (Figma)",
+
         // Contact & Sidebar
         "lbl_email": "电子邮件",
         "lbl_phone": "电话",
@@ -402,6 +436,14 @@ const translations = {
         "timeline_ignou": "인디라 간디 국립 개방 대학교 (IGNOU), 러크나우, 인도.",
         "timeline_msc": "현대 표준 중급 대학, 러크나우, 인도.",
         "timeline_lcc": "러크나우 기독교 대학, 러크나우, 인도.",
+
+        // Tech Stack
+        "tech_react": "React.js & Tailwind (v18)",
+        "tech_php": "PHP & Xtream/IPTV API",
+        "tech_cloud": "클라우드 (Vercel/Docker)",
+        "tech_python": "Python & 자동화",
+        "tech_android": "Android 커널 & ROM",
+        "tech_ui": "UI/UX 디자인 (Figma)",
 
         // Contact & Sidebar
         "lbl_email": "이메일",
