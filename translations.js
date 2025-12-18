@@ -24,6 +24,7 @@ const translations = {
         "contact_text": "Interested in collaboration or have a technical project? Feel free to reach out via the contacts in the sidebar or send me a message.",
 
         // Tech Stack
+        "tech_title": "Specialized Tech",
         "tech_react": "React.js & Tailwind (v18)",
         "tech_php": "PHP & Xtream/IPTV APIs",
         "tech_cloud": "Cloud (Vercel/Docker)",
@@ -154,6 +155,7 @@ const translations = {
         "timeline_lcc": "كلية لكناو المسيحية، لكناو، الهند.",
 
         // Tech Stack
+        "tech_title": "التقنيات المتخصصة",
         "tech_react": "React.js & Tailwind (v18)",
         "tech_php": "PHP & Xtream/IPTV APIs",
         "tech_cloud": "الحوسبة السحابية (Vercel/Docker)",
@@ -298,6 +300,7 @@ const translations = {
         "timeline_lcc": "Lucknow Christian College，印度勒克瑙。",
 
         // Tech Stack
+        "tech_title": "专业技术",
         "tech_react": "React.js & Tailwind (v18)",
         "tech_php": "PHP & Xtream/IPTV API",
         "tech_cloud": "云服务 (Vercel/Docker)",
@@ -438,6 +441,7 @@ const translations = {
         "timeline_lcc": "러크나우 기독교 대학, 러크나우, 인도.",
 
         // Tech Stack
+        "tech_title": "전문 기술",
         "tech_react": "React.js & Tailwind (v18)",
         "tech_php": "PHP & Xtream/IPTV API",
         "tech_cloud": "클라우드 (Vercel/Docker)",
