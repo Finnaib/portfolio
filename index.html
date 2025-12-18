@@ -91,10 +91,11 @@
 
                 <nav class="navbar">
                     <ul class="navbar-list">
-                        <li class="navbar-link active" data-tab="about" data-i18n="nav_about">About</li>
-                        <li class="navbar-link" data-tab="resume" data-i18n="nav_resume">Resume</li>
-                        <li class="navbar-link" data-tab="portfolio" data-i18n="nav_portfolio">Portfolio</li>
-                        <li class="navbar-link" data-tab="contact" data-i18n="nav_contact">Contact</li>
+                        <li class="navbar-link active" onclick="changeTab('about')" data-i18n="nav_about">About</li>
+                        <li class="navbar-link" onclick="changeTab('resume')" data-i18n="nav_resume">Resume</li>
+                        <li class="navbar-link" onclick="changeTab('portfolio')" data-i18n="nav_portfolio">Portfolio
+                        </li>
+                        <li class="navbar-link" onclick="changeTab('contact')" data-i18n="nav_contact">Contact</li>
                     </ul>
                 </nav>
 
@@ -122,8 +123,7 @@
                     <header>
                         <h3>Specialized Tech</h3>
                     </header>
-                    <div class="skills-list"
-                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 25px;">
+                    <div class="skills-list">
                         <div class="skill-item">
                             <h5 style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                                 <span>React.js & Tailwind (v18)</span> <span>95%</span>

@@ -10,14 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             menuBtn.classList.toggle('open');
         });
 
-        // Close menu when link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                sidebar.classList.remove('active');
-                menuBtn.classList.remove('open');
-            });
-        });
-
         // Close when clicking outside on main content
         const mainContent = document.querySelector('.main-content');
         if (mainContent) {
@@ -29,10 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-
-    // Initial Tab State
-    // We can set this if needed, but HTML has 'active' classes already.
 });
+
+
 
 // Global Tab Switching Function
 window.changeTab = function (tabName) {
