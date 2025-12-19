@@ -193,18 +193,9 @@
 </head>
 
 <body>
-    <div class="btn-controls"><select id="lang-selector" onchange="changeLanguage(this.value)"
-            style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; cursor: pointer; font-weight: bold;">
-            <option value="en">🇺🇸 English</option>
-            <option value="ar">🇸🇦 Arabic</option>
-            <option value="zh">🇨🇳 Chinese</option>
-            <option value="ko">🇰🇷 Korean</option>
-        </select><button onclick="window.print()" class="btn" data-i18n="print_btn">Print / Save as PDF</button><a
-            href="index.html" class="btn" data-i18n="back_btn">Back to Portfolio</a></div>
     <header>
         <h1>MOHD SHOAIB</h1>
-        <div class="contact-info">Cairo,
-            Egypt |+91-9369890468 | shoaibwwe01@gmail.com </div>
+        <div class="contact-info">Cairo, Egypt &nbsp;•&nbsp; +91-9369890468 &nbsp;•&nbsp; shoaibwwe01@gmail.com</div>
     </header>
     <section class="summary">
         <h2 data-i18n="res_summary_title">Professional Summary</h2>
@@ -394,7 +385,53 @@
         </div>
     </section>
     <script src="translations.js"></script>
-    <script>function changeLanguage(lang) {
+    <script>
+        function renderControls() {
+            // Check if controls already exist to avoid duplicates
+            if (document.querySelector('.btn-controls')) return;
+
+            const controlsDiv = document.createElement('div');
+            controlsDiv.className = 'btn-controls';
+
+            const select = document.createElement('select');
+            select.id = 'lang-selector';
+            select.onchange = (e) => changeLanguage(e.target.value);
+            select.style.cssText = "padding: 10px; border-radius: 4px; border: 1px solid #ccc; cursor: pointer; font-weight: bold;";
+
+            const options = [
+                { val: 'en', text: '🇺🇸 English' },
+                { val: 'ar', text: '🇸🇦 Arabic' },
+                { val: 'zh', text: '🇨🇳 Chinese' },
+                { val: 'ko', text: '🇰🇷 Korean' }
+            ];
+
+            options.forEach(opt => {
+                const option = document.createElement('option');
+                option.value = opt.val;
+                option.textContent = opt.text;
+                select.appendChild(option);
+            });
+
+            const printBtn = document.createElement('button');
+            printBtn.className = 'btn';
+            printBtn.onclick = () => window.print();
+            printBtn.textContent = 'Print / Save as PDF';
+            printBtn.setAttribute('data-i18n', 'print_btn');
+
+            const backBtn = document.createElement('a');
+            backBtn.href = 'index.html';
+            backBtn.className = 'btn';
+            backBtn.textContent = 'Back to Portfolio';
+            backBtn.setAttribute('data-i18n', 'back_btn');
+
+            controlsDiv.appendChild(select);
+            controlsDiv.appendChild(printBtn);
+            controlsDiv.appendChild(backBtn);
+
+            document.body.insertBefore(controlsDiv, document.body.firstChild);
+        }
+
+        function changeLanguage(lang) {
             // Update Dictionary
             const dict = translations[lang];
 
@@ -408,22 +445,15 @@
 
             // Handle RTL for Arabic
             const body = document.body;
-            const headers = document.querySelectorAll('header, h2, h3, .item-header, .item-sub, li, p');
-
+            // No need to query all headers every time, css class handling is cleaner but sticking to existing logic for minimal risk
+            
             if (lang === 'ar') {
                 document.documentElement.setAttribute('dir', 'rtl');
                 body.style.direction = 'rtl';
                 body.style.textAlign = 'right';
-
-                // Specific alignment corrections
-                document.querySelectorAll('.item-header, .item-sub').forEach(el => {
-                    // Flexbox usually handles RTL flips automatically, but ensure justification is correct
-                });
                 document.querySelectorAll('li').forEach(el => el.style.textAlign = 'right');
                 document.querySelectorAll('p').forEach(el => el.style.textAlign = 'right');
-            }
-
-            else {
+            } else {
                 document.documentElement.setAttribute('dir', 'ltr');
                 body.style.direction = 'ltr';
                 body.style.textAlign = 'left';
@@ -433,12 +463,18 @@
 
             // Persist
             localStorage.setItem('portfolio_lang', lang);
+            
+            // Sync selector if it exists
+            const selector = document.getElementById('lang-selector');
+            if (selector) selector.value = lang;
         }
 
         // Initialize
-        const savedLang = localStorage.getItem('portfolio_lang') || 'en';
-        document.getElementById('lang-selector').value = savedLang;
-        changeLanguage(savedLang);
+        document.addEventListener('DOMContentLoaded', () => {
+             renderControls();
+             const savedLang = localStorage.getItem('portfolio_lang') || 'en';
+             changeLanguage(savedLang); // This will also sync the newly created selector
+        });
     </script>
 </body>
 
