@@ -96,7 +96,7 @@ const translations = {
         // Projects
         // FinnTV
         // FinnTV
-        "proj_finntv_title": "FinnTV - IPTV Infrastructure",
+        "proj_finntv_title": "Finn TV - IPTV Infrastructure",
         "proj_finntv_1": "Architected and deployed an IPTV streaming infrastructure handling 10,000+ daily active requests.",
         "proj_finntv_2": "Used PHP, Python, Docker, and Nginx to ensure scalability and reliability.",
         "proj_finntv_3": "Integrated monitoring tools to track server health, reducing downtime by 40%.",
@@ -104,7 +104,7 @@ const translations = {
 
         // FinnERP
         // FinnERP
-        "proj_finnerp_title": "FinnERP - Enterprise Management System",
+        "proj_finnerp_title": "Finn ERP - Enterprise Management System",
         "proj_finnerp_1": "Developed a full-featured ERP system using React, Firebase, and Tailwind CSS.",
         "proj_finnerp_2": "Automated reporting workflows, reducing manual processing time by 40%.",
         "proj_finnerp_3": "Crafted a responsive and user-friendly interface to improve adoption and usability.",
@@ -249,13 +249,13 @@ const translations = {
         "exp_agi_hw_4": "تعاون مع كبار موظفي تكنولوجيا المعلومات لترقية كابلات الشبكة والبنية التحتية لغرفة الخادم، مما أدى إلى تحسين سرعة الشبكة وموثوقيتها بشكل عام.",
 
         // Projects
-        "proj_finntv_title": "FinnTV - البنية التحتية لـ IPTV",
+        "proj_finntv_title": "Finn TV - البنية التحتية لـ IPTV",
         "proj_finntv_1": "صمم بنية تحتية لبث IPTV عالية الأداء قادرة على التعامل مع أكثر من 10,000 طلب نشط يوميًا بأقل وقت استجابة.",
         "proj_finntv_2": "استخدم مجموعة تقنية قوية بما في ذلك PHP و Python و Docker و Nginx لضمان قابلية التوسع وموثوقية خدمة البث.",
         "proj_finntv_3": "دمج أدوات مراقبة آلية لتتبع صحة البث وأداء الخادم، مما قلل وقت التوقف عن العمل بنسبة 40٪ من خلال الصيانة الاستباقية.",
         "proj_finntv_4": "نشر تدابير أمنية لحماية المحتوى وبيانات المستخدم، مما يضمن الامتثال لمعايير الصناعة.",
 
-        "proj_finnerp_title": "FinnERP - نظام إدارة المؤسسات",
+        "proj_finnerp_title": "Finn ERP - نظام إدارة المؤسسات",
         "proj_finnerp_1": "طور نظام تخطيط موارد المؤسسات (ERP) شامل باستخدام React و Firebase و Tailwind CSS، مما أدى إلى تحديث سير العمل الداخلي.",
         "proj_finnerp_2": "أتمت عمليات إعداد التقارير الحرجة، مما قلل من إدخال البيانات يدويًا ووقت إعداد التقارير بنسبة 40٪ لأقسام المالية والموارد البشرية.",
         "proj_finnerp_3": "صمم واجهة مستخدم بديهية وسريعة الاستجابة، مما أدى إلى تحسين معدلات تبني المستخدم وتقليل وقت التدريب للموظفين الجدد.",
@@ -391,13 +391,13 @@ const translations = {
         "exp_agi_hw_3": "管理计算机外围设备和组件的库存。",
         "exp_agi_hw_4": "与高级 IT 员工合作升级网络布线和服务器机房基础设施。",
 
-        "proj_finntv_title": "FinnTV - IPTV 基础设施",
+        "proj_finntv_title": "Finn TV - IPTV 基础设施",
         "proj_finntv_1": "构建了高性能 IPTV 流媒体基础设施，每天处理 10,000 多个活动请求。",
         "proj_finntv_2": "利用包括 PHP、Python、Docker 和 Nginx 在内的强大技术堆栈。",
         "proj_finntv_3": "集成自动化监控工具以跟踪流运行状况和服务器性能。",
         "proj_finntv_4": "部署安全措施以确保护内容和用户数据。",
 
-        "proj_finnerp_title": "FinnERP - 企业管理系统",
+        "proj_finnerp_title": "Finn ERP - 企业管理系统",
         "proj_finnerp_1": "使用 React、Firebase 和 Tailwind CSS 开发了全面的 ERP 系统。",
         "proj_finnerp_2": "自动化关键报告流程，为财务和人力资源部门减少 40% 的时间。",
         "proj_finnerp_3": "设计直观且响应迅速的用户界面，提高用户采用率。",
@@ -533,13 +533,13 @@ const translations = {
         "exp_agi_hw_3": "컴퓨터 주변 장치 및 구성 요소의 재고를 관리하여 가동 중지 시간을 최소화했습니다.",
         "exp_agi_hw_4": "네트워크 케이블링 및 서버 룸 인프라를 업그레이드하기 위해 고위 IT 직원과 협력했습니다.",
 
-        "proj_finntv_title": "FinnTV - IPTV 인프라",
+        "proj_finntv_title": "Finn TV - IPTV 인프라",
         "proj_finntv_1": "최소한의 지연 시간으로 일일 10,000건 이상의 활성 요청을 처리할 수 있는 인프라를 설계했습니다.",
         "proj_finntv_2": "PHP, Python, Docker 및 Nginx를 포함한 강력한 기술 스택을 활용했습니다.",
         "proj_finntv_3": "자동화된 모니터링 도구를 통합하여 사전 유지 관리를 통해 가동 중지 시간을 40% 줄였습니다.",
         "proj_finntv_4": "콘텐츠 및 사용자 데이터를 보호하기 위한 보안 조치를 배포했습니다.",
 
-        "proj_finnerp_title": "FinnERP - 전사적 자원 관리",
+        "proj_finnerp_title": "Finn ERP - 전사적 자원 관리",
         "proj_finnerp_1": "React, Firebase 및 Tailwind CSS를 사용하여 포괄적인 ERP 시스템을 개발했습니다.",
         "proj_finnerp_2": "재무 및 HR 부서의 수동 데이터 입력 및 보고 시간을 40% 단축했습니다.",
         "proj_finnerp_3": "직관적이고 반응이 빠른 사용자 인터페이스를 설계하여 사용자 채택률을 개선했습니다.",

@@ -299,7 +299,7 @@
     <section>
         <h2 data-i18n="res_proj_title">Technical Projects</h2>
         <div class="item">
-            <div class="item-header"><span data-i18n="proj_finntv_title">FinnTV - IPTV Infrastructure</span><span><span
+            <div class="item-header"><span data-i18n="proj_finntv_title">Finn TV - IPTV Infrastructure</span><span><span
                         data-i18n="date_oct">October</span> 2025 — <span data-i18n="date_present">Present</span></span>
             </div>
             <div class="item-sub"><span data-i18n="role_full_stack">Full Stack Developer</span><span><span
@@ -315,7 +315,7 @@
             </ul>
         </div>
         <div class="item">
-            <div class="item-header"><span data-i18n="proj_finnerp_title">FinnERP - Enterprise Management
+            <div class="item-header"><span data-i18n="proj_finnerp_title">Finn ERP - Enterprise Management
                     System</span><span><span data-i18n="date_oct">October</span> 2025 — <span
                         data-i18n="date_present">Present</span></span></div>
             <div class="item-sub"><span data-i18n="role_frontend">Frontend Developer</span><span><span
@@ -446,7 +446,7 @@
             // Handle RTL for Arabic
             const body = document.body;
             // No need to query all headers every time, css class handling is cleaner but sticking to existing logic for minimal risk
-            
+
             if (lang === 'ar') {
                 document.documentElement.setAttribute('dir', 'rtl');
                 body.style.direction = 'rtl';
@@ -463,7 +463,7 @@
 
             // Persist
             localStorage.setItem('portfolio_lang', lang);
-            
+
             // Sync selector if it exists
             const selector = document.getElementById('lang-selector');
             if (selector) selector.value = lang;
@@ -471,9 +471,9 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
-             renderControls();
-             const savedLang = localStorage.getItem('portfolio_lang') || 'en';
-             changeLanguage(savedLang); // This will also sync the newly created selector
+            renderControls();
+            const savedLang = localStorage.getItem('portfolio_lang') || 'en';
+            changeLanguage(savedLang); // This will also sync the newly created selector
         });
     </script>
 </body>

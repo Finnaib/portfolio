@@ -31,7 +31,7 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
 
 ## SPECIALIZED PROJECTS
 
-### **FinnTV (IPTV Infrastructure)**
+### **Finn TV (IPTV Infrastructure)**
 *   Developed a premium IPTV management platform featuring a high-performance streaming interface.
 *   Expertise in server-side channel management, real-time updates, and quality-of-service optimization.
 
@@ -39,8 +39,8 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
 *   Specialized in developing and flashing custom Android ROMs for performance and security enhancements.
 *   Experience in kernel tuning and hardware-specific software modifications.
 
-### **Finn Invoice & FinnERP Systems**
-*   Architected enterprise-grade systems for billing (Finn Invoice) and resource planning (FinnERP).
+### **Finn Invoice & Finn ERP Systems**
+*   Architected enterprise-grade systems for billing (Finn Invoice) and resource planning (Finn ERP).
 *   Integrated multi-currency support, automated tax calculations, and secure data analytics.
 
 ---
@@ -59,7 +59,7 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
 ---
 
 ## TECHNICAL SKILLS
-*   **Core IT:** Helpdesk, System Administration, Network Security, IT Asset Management.
+*   **Core IT:** Help Desk, System Administration, Network Security, IT Asset Management.
 *   **Platforms:** Windows, macOS, Linux, Android (System Level).
 *   **Tools:** Active Directory, Office 365, VPN Config, Remote Desktop, Gmail for Business.
 *   **Hardware:** Equipment maintenance, Diagnosis, Component-level repair.
