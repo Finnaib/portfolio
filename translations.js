@@ -74,7 +74,7 @@ const translations = {
         // Experience Bullets
         // Grand Wolf
         "exp_gw_1": "Directed technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
-        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, overseeing over 200 endpoints.",
+        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, managing over 200 endpoints.",
         "exp_gw_3": "Enforced security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
         "exp_gw_4": "Delivered advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
 
@@ -121,7 +121,7 @@ const translations = {
         // Android
         // Android
         "proj_android_title": "Custom Android System Optimization",
-        "proj_android_1": "Fine-tuned Android kernel parameters using C++, Java, and Shell scripting, improving battery life by 20%.",
+        "proj_android_1": "Fine-tuned Android kernel parameters using C++, Java, and Shell Scripting, improving battery life by 20%.",
         "proj_android_2": "Analyzed system logs to enhance memory management and process scheduling.",
         "proj_android_3": "Collaborated with the open-source community to test and validate system patches.",
         "proj_android_4": "Released custom ROMs and kernels used by 5,000+ users.",
@@ -132,8 +132,8 @@ const translations = {
         "role_part_time": "(Part-time)",
         "role_tech_support": "IT Technical Support Manager",
         "role_hw_tech": "Hardware Technician",
-        "role_full_stack": "Full Stack Developer",
-        "role_frontend": "Frontend Developer",
+        "role_full_stack": "Full-Stack Developer",
+        "role_frontend": "Front-End Developer",
         "role_sys_dev": "System Developer",
 
         // Education
