@@ -73,10 +73,11 @@ const translations = {
 
         // Experience Bullets
         // Grand Wolf
-        "exp_gw_1": "Directed technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
-        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, managing over 200 endpoints.",
-        "exp_gw_3": "Enforced security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
-        "exp_gw_4": "Delivered advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
+        // Grand Wolf
+        "exp_gw_1": "Directing technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
+        "exp_gw_2": "Supporting and maintaining IT infrastructure across 5 regional offices, managing over 200 endpoints.",
+        "exp_gw_3": "Enforcing security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
+        "exp_gw_4": "Delivering advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
 
         // AGI Tech Support Manager
         // AGI Tech Support Manager
@@ -132,8 +133,8 @@ const translations = {
         "role_part_time": "(Part-time)",
         "role_tech_support": "IT Technical Support Manager",
         "role_hw_tech": "Hardware Technician",
-        "role_full_stack": "Full-Stack Developer",
-        "role_frontend": "Front-End Developer",
+        "role_full_stack": "Full Stack Developer",
+        "role_frontend": "Frontend Developer",
         "role_sys_dev": "System Developer",
 
         // Education

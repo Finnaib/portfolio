@@ -53,6 +53,7 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
     *Modern Standard Intermediate College, Lucknow, India* | 01/2020 – 01/2022
 *   **High School Diploma**
     *Lucknow Christian College, Lucknow, India* | 01/2018 – 01/2020
+
 *   **Basic Arabic Language**
     *Markaz Tatweer (Al Azhar), Cairo, Egypt* | 10/2024 – Present
 
