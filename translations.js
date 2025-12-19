@@ -67,41 +67,39 @@ const translations = {
         "back_btn": "Back to Portfolio",
 
         // Resume Content - Summary
-        "res_summary_text": "Dedicated IT Help Desk and Support professional with over 10 years of experience providing technical support across Windows, Linux, and macOS environments. Strong expertise in hardware and software troubleshooting, network security, system administration, and end-user support. Proven ability to diagnose and resolve complex technical issues, manage IT assets, and maintain system reliability and security. Experienced in fast-paced environments with a strong focus on minimizing downtime and improving operational efficiency.",
-
-        // About Me Content
-        "about_text_1": "Dedicated IT Help Desk professional with over 10 years of experience providing technical support for both Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support.",
+        "res_summary_text": "Dedicated IT Help Desk and Support professional with over 10 years of experience delivering technical support across Windows, Linux, and macOS environments. Strong expertise in hardware and software troubleshooting, network security, system administration, and end-user support. Proven ability to diagnose and resolve complex technical issues, manage IT assets, and maintain system reliability and security. Experienced in fast-paced environments with a strong focus on minimizing downtime and improving operational efficiency.",
+        "about_text_1": "Dedicated IT Help Desk professional with over 10 years of experience delivering technical support for both Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support.",
         "about_text_2": "Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and minimizing downtime.",
 
         // Experience Bullets
         // Grand Wolf
-        "exp_gw_1": "Managed technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
-        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, managing over 200 endpoints.",
-        "exp_gw_3": "Implemented security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
-        "exp_gw_4": "Provided advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
+        "exp_gw_1": "Directed technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
+        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, overseeing over 200 endpoints.",
+        "exp_gw_3": "Enforced security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
+        "exp_gw_4": "Delivered advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
 
         // AGI Tech Support Manager
         // AGI Tech Support Manager
         "exp_agi_mgr_1": "Led IT support operations and supervised a team of 4 technicians, resolving 50+ support tickets per week.",
         "exp_agi_mgr_2": "Administered Active Directory, Office 365, and VPN environments for 500+ users, achieving a 98% SLA compliance rate.",
-        "exp_agi_mgr_3": "Designed and implemented backup and disaster recovery solutions, reducing potential data loss risk by 40%.",
+        "exp_agi_mgr_3": "Formulated and executed backup and disaster recovery solutions, reducing potential data loss risk by 40%.",
         "exp_agi_mgr_4": "Conducted cybersecurity awareness training, significantly reducing phishing incidents and improving overall security posture.",
-        "exp_agi_mgr_5": "Optimized IT procurement processes, reducing annual operational costs by 15%.",
+        "exp_agi_mgr_5": "Streamlined IT procurement processes, reducing annual operational costs by 15%.",
 
         // AGI Hardware Technician
         // AGI Hardware Technician
-        "exp_agi_hw_1": "Provided hardware support and lifecycle maintenance for 100+ workstations.",
+        "exp_agi_hw_1": "Supplied hardware support and lifecycle maintenance for 100+ workstations.",
         "exp_agi_hw_2": "Diagnosed and resolved server and client hardware issues with a 95% first-visit fix rate.",
-        "exp_agi_hw_3": "Managed inventory of computer hardware and peripherals to ensure timely replacement and minimal downtime.",
+        "exp_agi_hw_3": "Controlled inventory of computer hardware and peripherals to ensure timely replacement and minimal downtime.",
         "exp_agi_hw_4": "Assisted in network cabling and server room upgrades, improving network speed and reliability.",
 
         // Projects
         // FinnTV
         // FinnTV
         "proj_finntv_title": "FinnTV - IPTV Infrastructure",
-        "proj_finntv_1": "Designed and deployed an IPTV streaming infrastructure handling 10,000+ daily active requests.",
+        "proj_finntv_1": "Architected and deployed an IPTV streaming infrastructure handling 10,000+ daily active requests.",
         "proj_finntv_2": "Used PHP, Python, Docker, and Nginx to ensure scalability and reliability.",
-        "proj_finntv_3": "Implemented monitoring tools to track server health, reducing downtime by 40%.",
+        "proj_finntv_3": "Integrated monitoring tools to track server health, reducing downtime by 40%.",
         "proj_finntv_4": "Applied security measures to protect streaming content and user data.",
 
         // FinnERP
@@ -109,21 +107,21 @@ const translations = {
         "proj_finnerp_title": "FinnERP - Enterprise Management System",
         "proj_finnerp_1": "Developed a full-featured ERP system using React, Firebase, and Tailwind CSS.",
         "proj_finnerp_2": "Automated reporting workflows, reducing manual processing time by 40%.",
-        "proj_finnerp_3": "Designed a responsive and user-friendly interface to improve adoption and usability.",
+        "proj_finnerp_3": "Crafted a responsive and user-friendly interface to improve adoption and usability.",
         "proj_finnerp_4": "Integrated real-time data synchronization across system modules.",
 
         // Finn Invoice
         // Finn Invoice
         "proj_finninv_title": "Finn Invoice - Billing System",
         "proj_finninv_1": "Built a billing and invoicing system using HTML, CSS, and JavaScript with 100% invoice accuracy.",
-        "proj_finninv_2": "Implemented validation rules to prevent data entry errors and billing disputes.",
-        "proj_finninv_3": "Optimized performance for fast load times with large datasets.",
+        "proj_finninv_2": "Applied validation rules to prevent data entry errors and billing disputes.",
+        "proj_finninv_3": "Enhanced performance for fast load times with large datasets.",
         "proj_finninv_4": "Created dashboards for invoice tracking and payment history visibility.",
 
         // Android
         // Android
         "proj_android_title": "Custom Android System Optimization",
-        "proj_android_1": "Optimized Android kernel parameters using C++, Java, and Shell scripting, improving battery life by 20%.",
+        "proj_android_1": "Fine-tuned Android kernel parameters using C++, Java, and Shell scripting, improving battery life by 20%.",
         "proj_android_2": "Analyzed system logs to enhance memory management and process scheduling.",
         "proj_android_3": "Collaborated with the open-source community to test and validate system patches.",
         "proj_android_4": "Released custom ROMs and kernels used by 5,000+ users.",
