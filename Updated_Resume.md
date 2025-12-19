@@ -59,11 +59,7 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
 ---
 
 ## TECHNICAL SKILLS
-*   **Core IT:** Help Desk, System Administration, Network Security, IT Asset Management.
-*   **Platforms:** Windows, macOS, Linux, Android (System Level).
-*   **Tools:** Active Directory, Office 365, VPN Config, Remote Desktop, Gmail for Business.
-*   **Hardware:** Equipment maintenance, Diagnosis, Component-level repair.
-*   **System Logic:** SQL, ERP Architecture, IPTV Protocols.
+*   **Skills:** Gmail, Help Desk, Networking, Linux, Mac OS, Active Directory, Microsoft Office 365, VPN, Cybersecurity, IPTV, PHP, Python, Docker, Nginx, ERP, React, Google Firebase, Tailwind, HTML, CSS, JavaScript, C/C++, Java, Shell Scripting.
 
 ---
 
