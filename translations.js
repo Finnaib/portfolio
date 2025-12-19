@@ -5,7 +5,7 @@ const translations = {
         "nav_resume": "Resume",
         "nav_portfolio": "Portfolio",
         "nav_contact": "Contact",
-        "role_title": "IT Manager & Specialist",
+        "role_title": "IT Tech Support Manager | IT Specialist",
         "location": "Cairo, Egypt",
         "loc_cairo": "Cairo, Egypt",
         "loc_lucknow": "Lucknow, India",
@@ -66,7 +66,7 @@ const translations = {
         "back_btn": "Back to Portfolio",
 
         // Resume Content - Summary
-        "res_summary_text": "Dedicated IT Help Desk professional with over 10 years of experience providing technical support for Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support. Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and minimizing downtime.",
+        "res_summary_text": "Dedicated IT Help Desk and Support professional with over 10 years of experience providing technical support across Windows, Linux, and macOS environments. Strong expertise in hardware and software troubleshooting, network security, system administration, and end-user support. Proven ability to diagnose and resolve complex technical issues, manage IT assets, and maintain system reliability and security. Experienced in fast-paced environments with a strong focus on minimizing downtime and improving operational efficiency.",
 
         // About Me Content
         "about_text_1": "Dedicated IT Help Desk professional with over 10 years of experience providing technical support for both Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support.",
@@ -74,52 +74,58 @@ const translations = {
 
         // Experience Bullets
         // Grand Wolf
-        "exp_gw_1": "Spearheaded the technical operations and security infrastructure for a premier security firm, ensuring 99.9% system uptime through proactive maintenance and monitoring.",
-        "exp_gw_2": "Orchestrated the stability of critical infrastructure across 5 regional offices, supporting over 200 endpoints with robust networking solutions.",
-        "exp_gw_3": "Enforced comprehensive security protocols for a fleet of 150+ mobile and desktop assets, successfully reducing asset loss and unauthorized access incidents by 95%.",
-        "exp_gw_4": "Resolved complex technical issues for end-users, maintaining a high satisfaction rate and ensuring minimal disruption to business operations.",
+        "exp_gw_1": "Managed technical operations and security infrastructure, maintaining 99.9% system uptime through proactive monitoring and maintenance.",
+        "exp_gw_2": "Supported and maintained IT infrastructure across 5 regional offices, managing over 200 endpoints.",
+        "exp_gw_3": "Implemented security controls for 150+ mobile and desktop devices, reducing asset loss and unauthorized access by 95%.",
+        "exp_gw_4": "Provided advanced technical support to end users, ensuring minimal business disruption and high user satisfaction.",
 
         // AGI Tech Support Manager
-        "exp_agi_mgr_1": "Directed comprehensive IT support services for institutional programs, leading a high-performing team of 4 technicians to resolve over 50 technical tickets weekly.",
-        "exp_agi_mgr_2": "Administered Active Directory, Office 365, and VPN network configurations for a user base of 500+, achieving a 98% resolution rate within strict Service Level Agreements (SLA).",
-        "exp_agi_mgr_3": "Established scalable backup solutions and disaster recovery protocols, reducing the risk of potential data loss by 40% and ensuring business continuity.",
-        "exp_agi_mgr_4": "Conducted regular training sessions for staff on cybersecurity best practices, significantly reducing phishing susceptibility and improving overall network security posture.",
-        "exp_agi_mgr_5": "Streamlined procurement processes for IT hardware and software, resulting in a 15% reduction in operational IT costs annually.",
+        // AGI Tech Support Manager
+        "exp_agi_mgr_1": "Led IT support operations and supervised a team of 4 technicians, resolving 50+ support tickets per week.",
+        "exp_agi_mgr_2": "Administered Active Directory, Office 365, and VPN environments for 500+ users, achieving a 98% SLA compliance rate.",
+        "exp_agi_mgr_3": "Designed and implemented backup and disaster recovery solutions, reducing potential data loss risk by 40%.",
+        "exp_agi_mgr_4": "Conducted cybersecurity awareness training, significantly reducing phishing incidents and improving overall security posture.",
+        "exp_agi_mgr_5": "Optimized IT procurement processes, reducing annual operational costs by 15%.",
 
         // AGI Hardware Technician
-        "exp_agi_hw_1": "Provided essential hardware support and lifecycle maintenance for over 100 workstations, ensuring optimal performance and longevity of equipment.",
-        "exp_agi_hw_2": "Diagnosed and resolved complex hardware failures in both server and client environments, achieving a consistent 95% first-visit fix rate.",
-        "exp_agi_hw_3": "Managed inventory of computer peripherals and components, ensuring timely replacements and minimizing downtime for critical academic staff.",
-        "exp_agi_hw_4": "Collaborated with senior IT staff to upgrade network cabling and server room infrastructure, improving overall network speed and reliability.",
+        // AGI Hardware Technician
+        "exp_agi_hw_1": "Provided hardware support and lifecycle maintenance for 100+ workstations.",
+        "exp_agi_hw_2": "Diagnosed and resolved server and client hardware issues with a 95% first-visit fix rate.",
+        "exp_agi_hw_3": "Managed inventory of computer hardware and peripherals to ensure timely replacement and minimal downtime.",
+        "exp_agi_hw_4": "Assisted in network cabling and server room upgrades, improving network speed and reliability.",
 
         // Projects
         // FinnTV
+        // FinnTV
         "proj_finntv_title": "FinnTV - IPTV Infrastructure",
-        "proj_finntv_1": "Architected a high-performance IPTV streaming infrastructure capable of handling over 10,000 daily active requests with minimal latency.",
-        "proj_finntv_2": "Utilized a robust tech stack including PHP, Python, Docker, and Nginx to ensure scalability and reliability of the streaming service.",
-        "proj_finntv_3": "Integrated automated monitoring tools to track stream health and server performance, reducing downtime by 40% through proactive maintenance.",
-        "proj_finntv_4": "Deployed security measures to protect content and user data, ensuring compliance with industry standards.",
+        "proj_finntv_1": "Designed and deployed an IPTV streaming infrastructure handling 10,000+ daily active requests.",
+        "proj_finntv_2": "Used PHP, Python, Docker, and Nginx to ensure scalability and reliability.",
+        "proj_finntv_3": "Implemented monitoring tools to track server health, reducing downtime by 40%.",
+        "proj_finntv_4": "Applied security measures to protect streaming content and user data.",
 
         // FinnERP
+        // FinnERP
         "proj_finnerp_title": "FinnERP - Enterprise Management System",
-        "proj_finnerp_1": "Developed a comprehensive enterprise resource planning (ERP) system using React, Firebase, and Tailwind CSS, modernizing internal workflows.",
-        "proj_finnerp_2": "Automated critical reporting processes, reducing manual data entry and reporting time by 40% for the finance and HR departments.",
-        "proj_finnerp_3": "Designed an intuitive and responsive user interface, improving user adoption rates and reducing training time for new employees.",
-        "proj_finnerp_4": "Integrated real-time data synchronization features to ensure accurate and up-to-date information across all modules.",
+        "proj_finnerp_1": "Developed a full-featured ERP system using React, Firebase, and Tailwind CSS.",
+        "proj_finnerp_2": "Automated reporting workflows, reducing manual processing time by 40%.",
+        "proj_finnerp_3": "Designed a responsive and user-friendly interface to improve adoption and usability.",
+        "proj_finnerp_4": "Integrated real-time data synchronization across system modules.",
 
         // Finn Invoice
-        "proj_finninv_title": "Finn Invoice - Billing Ecosystem",
-        "proj_finninv_1": "Engineered a robust billing and invoicing ecosystem using HTML, CSS, and JavaScript, processing monthly invoices with 100% accuracy.",
-        "proj_finninv_2": "Applied custom validation logic to prevent data entry errors, ensuring financial data integrity and reducing billing disputes.",
-        "proj_finninv_3": "Refined the application for performance, ensuring fast load times and smooth operation even with large datasets.",
-        "proj_finninv_4": "Created a user-friendly dashboard for tracking invoice status and payment history, enhancing financial visibility for clients.",
+        // Finn Invoice
+        "proj_finninv_title": "Finn Invoice - Billing System",
+        "proj_finninv_1": "Built a billing and invoicing system using HTML, CSS, and JavaScript with 100% invoice accuracy.",
+        "proj_finninv_2": "Implemented validation rules to prevent data entry errors and billing disputes.",
+        "proj_finninv_3": "Optimized performance for fast load times with large datasets.",
+        "proj_finninv_4": "Created dashboards for invoice tracking and payment history visibility.",
 
         // Android
+        // Android
         "proj_android_title": "Custom Android System Optimization",
-        "proj_android_1": "Enhanced Android kernel parameters using C++, Java, and Shell scripting, successfully boosting device battery life by 20% across supported devices.",
-        "proj_android_2": "Analyzed system logs and performance metrics to identify bottlenecks and implement targeted improvements in process scheduling and memory management.",
-        "proj_android_3": "Collaborated with the open-source community to test and validate patches, ensuring stability and compatibility across different device models.",
-        "proj_android_4": "Released custom ROMs and kernels that were downloaded and used by a community of over 5,000 users.",
+        "proj_android_1": "Optimized Android kernel parameters using C++, Java, and Shell scripting, improving battery life by 20%.",
+        "proj_android_2": "Analyzed system logs to enhance memory management and process scheduling.",
+        "proj_android_3": "Collaborated with the open-source community to test and validate system patches.",
+        "proj_android_4": "Released custom ROMs and kernels used by 5,000+ users.",
 
 
         // Job Titles & Roles
@@ -133,8 +139,8 @@ const translations = {
 
         // Education
         "edu_arabic": "Basic Arabic Language",
-        "edu_bca": "Bachelor of Computer Application (BCA)",
-        "edu_dropped": "(Dropped Out)",
+        "edu_bca": "Bachelor of Computer Applications (BCA)",
+        "edu_dropped": "(Incomplete)",
         "edu_inter": "Intermediate Degree",
         "edu_hs": "High School Diploma",
 
