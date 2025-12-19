@@ -51,7 +51,7 @@ const translations = {
         "timeline_gw": "Grand Wolf, Cairo, Egypt. Directing technical operations and security infrastructure for a premier security firm.",
         "timeline_agi": "AGI Institute, Lucknow, India. Managed IT support for institutional programs, Active Directory, Office 365, and VPN configurations.",
         "timeline_agi_hw": "AGI Institute, Lucknow, India. Provided essential hardware support and equipment lifecycle maintenance.",
-        "timeline_tatweer": "Markaz Tatweer (Al Azhar), Cairo, Egypt.",
+        "timeline_tatweer": "Markaz Tatweer (Al-Azhar), Cairo, Egypt.",
         "timeline_ignou": "Indira Gandhi National Open University (IGNOU), Lucknow, India.",
         "timeline_msc": "Modern Standard Intermediate College, Lucknow, India.",
         "timeline_lcc": "Lucknow Christian College, Lucknow, India.",
@@ -61,7 +61,8 @@ const translations = {
         "res_exp_title": "Work Experience",
         "res_edu_title": "Education",
         "res_proj_title": "Technical Projects",
-        "res_skills_title": "Core Skills & Languages",
+        "res_skills_title": "Core Skills",
+        "res_languages_title": "Languages",
         "print_btn": "Print / Save as PDF",
         "back_btn": "Back to Portfolio",
 
@@ -131,7 +132,7 @@ const translations = {
         // Job Titles & Roles
         "role_it_officer": "IT Officer",
         "role_part_time": "(Part-time)",
-        "role_tech_support": "IT Tech Support Manager",
+        "role_tech_support": "IT Technical Support Manager",
         "role_hw_tech": "Hardware Technician",
         "role_full_stack": "Full Stack Developer",
         "role_frontend": "Frontend Developer",
@@ -140,7 +141,7 @@ const translations = {
         // Education
         "edu_arabic": "Basic Arabic Language",
         "edu_bca": "Bachelor of Computer Applications (BCA)",
-        "edu_dropped": "(Incomplete)",
+        "edu_dropped": " – Incomplete",
         "edu_inter": "Intermediate Degree",
         "edu_hs": "High School Diploma",
 
@@ -217,7 +218,8 @@ const translations = {
         "res_exp_title": "الخبرة العملية",
         "res_edu_title": "التعليم",
         "res_proj_title": "المشاريع التقنية",
-        "res_skills_title": "المهارات واللغات",
+        "res_skills_title": "المهارات الأساسية",
+        "res_languages_title": "اللغات",
         "print_btn": "طباعة / حفظ PDF",
         "back_btn": "العودة للمعرض",
 
@@ -362,7 +364,8 @@ const translations = {
         "res_exp_title": "工作经验",
         "res_edu_title": "教育背景",
         "res_proj_title": "技术项目",
-        "res_skills_title": "核心技能与语言",
+        "res_skills_title": "核心技能",
+        "res_languages_title": "语言",
         "print_btn": "打印 / 保存为 PDF",
         "back_btn": "返回作品集",
 
@@ -503,7 +506,8 @@ const translations = {
         "res_exp_title": "경력",
         "res_edu_title": "학력",
         "res_proj_title": "기술 프로젝트",
-        "res_skills_title": "핵심 기술 및 언어",
+        "res_skills_title": "핵심 기술",
+        "res_languages_title": "언어",
         "print_btn": "인쇄 / PDF 저장",
         "back_btn": "포트폴리오로 돌아가기",
 
