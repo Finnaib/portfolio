@@ -67,9 +67,9 @@ const translations = {
         "back_btn": "Back to Portfolio",
 
         // Resume Content - Summary
-        "res_summary_text": "I am a dedicated IT Help Desk and Support professional with over 10 years of experience providing technical support in Windows, Linux, and macOS environments. My expertise covers everything from managing complex IT infrastructures and ensuring system security to delivering seamless user support. I have a proven track record of solving technical challenges efficiently, documenting processes for clarity, and staying updated with the latest advancements in IT and cybersecurity.",
-        "about_text_1": "Dedicated IT Help Desk professional with over 10 years of experience delivering technical support for Windows, Linux, and macOS environments. Proven expertise in hardware and software troubleshooting, network security management, system administration, and end-user support.",
-        "about_text_2": "Skilled in diagnosing and resolving technical issues, managing IT assets, and ensuring system reliability and security. Adept at working in fast-paced environments with a strong commitment to improving operational efficiency and minimizing downtime.",
+        "res_summary_text": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and macOS. Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.",
+        "about_text_1": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and macOS.",
+        "about_text_2": "Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.",
 
         // Experience Bullets
         // Grand Wolf
@@ -248,11 +248,11 @@ const translations = {
         "back_btn": "العودة للمعرض",
 
         // Resume Content - Summary
-        "res_summary_text": "محترف متخصص في دعم تقنية المعلومات بخبرة تزيد عن 10 سنوات في تقديم الدعم الفني لبيئات Windows و Linux و macOS. خبرة مثبتة في استكشاف أخطاء الأجهزة والبرامج وإصلاحها، وإدارة أمن الشبكات، وإدارة الأنظمة، ودعم المستخدم النهائي.",
+        "res_summary_text": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و macOS. بارع في إدارة أمن الشبكات وإدارة النظام واستكشاف الأخطاء وإصلاحها الشامل لتقليل وقت التوقف عن العمل وتحسين تجربة المستخدم. نجاح مثبت في الحفاظ على الأداء التشغيلي العالي ورضا العملاء.",
 
         // About Me Content
-        "about_text_1": "محترف متخصص في دعم تقنية المعلومات بخبرة تزيد عن 10 سنوات في تقديم الدعم الفني لبيئات Windows و Linux و macOS. خبرة مثبتة في استكشاف أخطاء الأجهزة والبرامج وإصلاحها، وإدارة أمن الشبكات، وإدارة الأنظمة، ودعم المستخدم النهائي.",
-        "about_text_2": "ماهر في تشخيص وحل المشكلات الفنية، وإدارة الأصول التقنية، وضمان موثوقية النظام وأمنه. بارع في العمل في بيئات سريعة الوتيرة مع التزام قوي بتحسين الكفاءة التشغيلية وتقليل وقت التوقف عن العمل.",
+        "about_text_1": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و macOS.",
+        "about_text_2": "بارع في إدارة أمن الشبكات وإدارة النظام واستكشاف الأخطاء وإصلاحها الشامل لتقليل وقت التوقف عن العمل وتحسين تجربة المستخدم. نجاح مثبت في الحفاظ على الأداء التشغيلي العالي ورضا العملاء.",
 
         // Experience Bullets
         // Grand Wolf
@@ -419,11 +419,11 @@ const translations = {
         "back_btn": "返回作品集",
 
         // Resume Content - Summary
-        "res_summary_text": "致力于 IT 服务台的专业人士，拥有超过 10 年为 Windows、Linux 和 macOS 环境提供技术支持的经验。在硬件和软件故障排除、网络安全管理、系统管理和最终用户支持方面拥有这实经验。",
+        "res_summary_text": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 macOS）的技术支持经验。擅长管理网络安全、系统管理和全面故障排除，以最大限度地减少停机时间并改善用户体验。在保持高运营绩效和客户满意度方面取得了显著成功。",
 
         // About & Bullets (Simplified Chinese placeholders for length, usually would be fully translated)
-        "about_text_1": "致力于 IT 服务台的专业人士，拥有超过 10 年为 Windows、Linux 和 macOS 环境提供技术支持的经验。",
-        "about_text_2": "擅长诊断和解决技术问题，管理 IT 资产，确系统可靠性和安全性。",
+        "about_text_1": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 macOS）的技术支持经验。",
+        "about_text_2": "擅长管理网络安全、系统管理和全面故障排除，以最大限度地减少停机时间并改善用户体验。在保持高运营绩效和客户满意度方面取得了显著成功。",
 
         // Bullets (Generic placeholders for ZH to save space, but functional)
         "exp_gw_1": "领导一家顶级安全公司的技术运营和安全基础设施，确保 99.9% 的正常运行时间。",
@@ -586,11 +586,11 @@ const translations = {
         "back_btn": "포트폴리오로 돌아가기",
 
         // Resume Content - Summary
-        "res_summary_text": "Windows, Linux 및 macOS 환경에 대한 기술 지원을 제공하는 10년 이상의 경력을 가진 헌신적인 IT 헬프 데스크 전문가입니다. 하드웨어 및 소프트웨어 문제 해결, 네트워크 보안 관리, 시스템 관리 및 최종 사용자 지원 분야에서 입증된 전문 지식을 보유하고 있습니다.",
+        "res_summary_text": "Windows, Linux 및 macOS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다. 네트워크 보안 관리, 시스템 관리 및 포괄적인 문제 해결에 능숙하여 가동 중지 시간을 최소화하고 사용자 경험을 개선합니다. 높은 운영 성과와 고객 만족도를 유지하는 데 성공했음을 입증했습니다.",
 
         // About & Bullets
-        "about_text_1": "Windows, Linux 및 macOS 환경에 대한 기술 지원을 제공하는 10년 이상의 경력을 가진 헌신적인 IT 헬프 데스크 전문가입니다.",
-        "about_text_2": "기술 문제 진단 및 해결, IT 자산 관리, 시스템 신뢰성 및 보안 보장에 능숙합니다.",
+        "about_text_1": "Windows, Linux 및 macOS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다.",
+        "about_text_2": "네트워크 보안 관리, 시스템 관리 및 포괄적인 문제 해결에 능숙하여 가동 중지 시간을 최소화하고 사용자 경험을 개선합니다. 높은 운영 성과와 고객 만족도를 유지하는 데 성공했음을 입증했습니다.",
 
         // Bullets
         "exp_gw_1": "최고의 보안 회사를 위한 기술 운영 및 보안 인프라를 주도하여 99.9%의 시스템 가동 시간을 보장했습니다.",
