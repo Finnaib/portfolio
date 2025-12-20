@@ -60,7 +60,7 @@ IT Help Desk Professional offering over a decade of technical support across div
 ---
 
 ## TECHNICAL SKILLS
-*   **Skills:** Gmail, Help Desk, Networking, Linux, Mac OS, Active Directory, Microsoft Office 365, VPN, Cybersecurity, IPTV, PHP, Python, Docker, Nginx, ERP, React, Google Firebase, Tailwind, HTML, CSS, JavaScript, C/C++, Java, Shell Scripting.
+*   **Skills:** Gmail, Help Desk, Networking, Linux, Mac OS, Active Directory, Microsoft Office 365, VPN, Cybersecurity, IPTV, PHP, Python, Docker, NGINX, ERP, React, Google Firebase, Tailwind, HTML, CSS, JavaScript, C/C++, Java, Shell Scripting.
 
 ---
 
