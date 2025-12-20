@@ -12,18 +12,18 @@ Dedicated IT Help Desk professional with over 10 years of experience providing t
 ## PROFESSIONAL EXPERIENCE
 
 ### **IT Officer**
-**Grand Wolf, Egypt** | *2024 – Present*
+**Grand Wolf, Egypt** | *11/2025 – Present*
 *   Directing IT operations and security infrastructure for a premier security and guarding organization.
 *   Managing high-stakes technical environments with a focus on stability, performance, and security.
 
 ### **IT Tech Support Manager**
-**AGI Institute, Lucknow, India** | *01/2016 – 09/2024*
+**AGI Institute, Lucknow, India** | *01/2019 – 01/2024*
 *   Successfully managed IT support for numerous educational programs and maintained high user satisfaction.
 *   Led technical teams in configuring Active Directory, Office 365, and VPN networks.
 *   Six years of experience in management role; three years as a hardware technician.
 
 ### **Hardware Technician**
-**AGI Institute, Lucknow, India** | *01/2019 – 09/2024*
+**AGI Institute, Lucknow, India** | *01/2016 – 12/2018*
 *   Provided comprehensive hardware and software support in an institutional environment.
 *   Diagnosed and resolved complex hardware failures and connectivity issues.
 
