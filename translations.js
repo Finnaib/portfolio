@@ -106,7 +106,7 @@ const translations = {
         // FinnERP
         // FinnERP
         "proj_finnerp_title": "Finn ERP - Enterprise Management System",
-        "proj_finnerp_1": "Developed a full-featured ERP system using React, Firebase, and Tailwind CSS.",
+        "proj_finnerp_1": "Engineered a full-featured ERP system using React, Firebase, and Tailwind CSS.",
         "proj_finnerp_2": "Automated reporting workflows, reducing manual processing time by 40%.",
         "proj_finnerp_3": "Crafted a responsive and user-friendly interface to improve adoption and usability.",
         "proj_finnerp_4": "Integrated real-time data synchronization across system modules.",

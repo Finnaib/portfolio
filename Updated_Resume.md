@@ -32,7 +32,7 @@ IT Help Desk Professional offering over a decade of technical support across div
 ## SPECIALIZED PROJECTS
 
 ### **Finn TV (IPTV Infrastructure)**
-*   Developed a premium IPTV management platform featuring a high-performance streaming interface.
+*   Engineered a premium IPTV management platform featuring a high-performance streaming interface.
 *   Expertise in server-side channel management, real-time updates, and quality-of-service optimization.
 
 ### **Android Custom ROMs & System Optimization**
