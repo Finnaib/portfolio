@@ -5,7 +5,7 @@ Cairo, Egypt | +91-9369890468 | shoaibwwe01@gmail.com
 ---
 
 ## PROFESSIONAL SUMMARY
-IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and macOS. Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.
+IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and mac OS. Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.
 
 ---
 

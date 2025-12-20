@@ -67,8 +67,8 @@ const translations = {
         "back_btn": "Back to Portfolio",
 
         // Resume Content - Summary
-        "res_summary_text": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and macOS. Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.",
-        "about_text_1": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and macOS.",
+        "res_summary_text": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and mac OS. Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.",
+        "about_text_1": "IT Help Desk Professional offering over a decade of technical support across diverse operating systems including Windows, Linux, and mac OS.",
         "about_text_2": "Adept at managing network security, system administration, and comprehensive troubleshooting to minimize downtime and improve user experience. Demonstrated success in maintaining high operational performance and customer satisfaction.",
 
         // Experience Bullets
@@ -147,7 +147,7 @@ const translations = {
         // Skills
         "skill_ad": "Active Directory / O365",
         "skill_netsec": "Network Security / VPN",
-        "skill_os": "Windows/macOS/Linux",
+        "skill_os": "Windows/mac OS/Linux",
         "skill_asset": "Technical Asset Management",
         "skill_android": "Android System Optimization",
         "skill_hw": "Hardware Diagnostics",
@@ -248,10 +248,10 @@ const translations = {
         "back_btn": "العودة للمعرض",
 
         // Resume Content - Summary
-        "res_summary_text": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و macOS. بارع في إدارة أمن الشبكات وإدارة النظام واستكشاف الأخطاء وإصلاحها الشامل لتقليل وقت التوقف عن العمل وتحسين تجربة المستخدم. نجاح مثبت في الحفاظ على الأداء التشغيلي العالي ورضا العملاء.",
+        "res_summary_text": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و mac OS. بارع في إدارة أمن الشبكات وإدارة النظام واستكشاف الأخطاء وإصلاحها الشامل لتقليل وقت التوقف عن العمل وتحسين تجربة المستخدم. نجاح مثبت في الحفاظ على الأداء التشغيلي العالي ورضا العملاء.",
 
         // About Me Content
-        "about_text_1": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و macOS.",
+        "about_text_1": "محترف مكتب مساعدة تقنية المعلومات يقدم أكثر من عقد من الدعم الفني عبر أنظمة تشغيل متنوعة بما في ذلك Windows و Linux و mac OS.",
         "about_text_2": "بارع في إدارة أمن الشبكات وإدارة النظام واستكشاف الأخطاء وإصلاحها الشامل لتقليل وقت التوقف عن العمل وتحسين تجربة المستخدم. نجاح مثبت في الحفاظ على الأداء التشغيلي العالي ورضا العملاء.",
 
         // Experience Bullets
@@ -318,7 +318,7 @@ const translations = {
         // Skills
         "skill_ad": "Active Directory / O365",
         "skill_netsec": "أمن الشبكات / VPN",
-        "skill_os": "Windows/macOS/Linux",
+        "skill_os": "Windows/mac OS/Linux",
         "skill_asset": "إدارة الأصول التقنية",
         "skill_android": "تحسين نظام Android",
         "skill_hw": "تشخيص الأجهزة",
@@ -419,10 +419,10 @@ const translations = {
         "back_btn": "返回作品集",
 
         // Resume Content - Summary
-        "res_summary_text": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 macOS）的技术支持经验。擅长管理网络安全、系统管理和全面故障排除，以最大限度地减少停机时间并改善用户体验。在保持高运营绩效和客户满意度方面取得了显著成功。",
+        "res_summary_text": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 mac OS）的技术支持经验。擅长管理网络安全、系统管理和全面故障排除，以最大限度地减少停机时间并改善用户体验。在保持高运营绩效和客户满意度方面取得了显著成功。",
 
         // About & Bullets (Simplified Chinese placeholders for length, usually would be fully translated)
-        "about_text_1": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 macOS）的技术支持经验。",
+        "about_text_1": "IT 服务台专业人员，拥有超过十年的跨多种操作系统（包括 Windows、Linux 和 mac OS）的技术支持经验。",
         "about_text_2": "擅长管理网络安全、系统管理和全面故障排除，以最大限度地减少停机时间并改善用户体验。在保持高运营绩效和客户满意度方面取得了显著成功。",
 
         // Bullets (Generic placeholders for ZH to save space, but functional)
@@ -485,7 +485,7 @@ const translations = {
         // Skills
         "skill_ad": "Active Directory / O365",
         "skill_netsec": "网络安全 / VPN",
-        "skill_os": "Windows/macOS/Linux",
+        "skill_os": "Windows/mac OS/Linux",
         "skill_asset": "技术资产管理",
         "skill_android": "Android 系统优化",
         "skill_hw": "硬件诊断",
@@ -586,10 +586,10 @@ const translations = {
         "back_btn": "포트폴리오로 돌아가기",
 
         // Resume Content - Summary
-        "res_summary_text": "Windows, Linux 및 macOS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다. 네트워크 보안 관리, 시스템 관리 및 포괄적인 문제 해결에 능숙하여 가동 중지 시간을 최소화하고 사용자 경험을 개선합니다. 높은 운영 성과와 고객 만족도를 유지하는 데 성공했음을 입증했습니다.",
+        "res_summary_text": "Windows, Linux 및 mac OS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다. 네트워크 보안 관리, 시스템 관리 및 포괄적인 문제 해결에 능숙하여 가동 중지 시간을 최소화하고 사용자 경험을 개선합니다. 높은 운영 성과와 고객 만족도를 유지하는 데 성공했음을 입증했습니다.",
 
         // About & Bullets
-        "about_text_1": "Windows, Linux 및 macOS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다.",
+        "about_text_1": "Windows, Linux 및 mac OS를 포함한 다양한 운영 체제에서 10년 이상의 기술 지원을 제공하는 IT 헬프 데스크 전문가입니다.",
         "about_text_2": "네트워크 보안 관리, 시스템 관리 및 포괄적인 문제 해결에 능숙하여 가동 중지 시간을 최소화하고 사용자 경험을 개선합니다. 높은 운영 성과와 고객 만족도를 유지하는 데 성공했음을 입증했습니다.",
 
         // Bullets
@@ -652,7 +652,7 @@ const translations = {
         // Skills
         "skill_ad": "Active Directory / O365",
         "skill_netsec": "네트워크 보안 / VPN",
-        "skill_os": "Windows/macOS/Linux",
+        "skill_os": "Windows/mac OS/Linux",
         "skill_asset": "기술 자산 관리",
         "skill_android": "Android 시스템 최적화",
         "skill_hw": "하드웨어 진단",
